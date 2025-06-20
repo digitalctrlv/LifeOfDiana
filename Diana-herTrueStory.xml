@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <listPerson>
+                <person xml:id="DS" sameAs="http://viaf.org/viaf/107032638">
+                    <persName xml:lang="en">Diana Spencer</persName>
+                    <persName xml:lang="it">Diana Spencer</persName>
+                    <birth when="1961-07-01"/>
+                    <death when="1997-08-31"/>
+                </person>
+            </listPerson>
+            <titleStmt>
+                <title>Extract from Diana: Her True Story</title>
+                <author>
+                    <forename>Andrew</forename>
+                    <surname>Morton</surname>
+                </author>
+                <editor>
+                    <forename>Alice</forename> 
+                    <surname>Spadavecchia</surname>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <forename>Alice</forename> 
+                    <surname>Spadavecchia</surname>
+                </publisher>
+                <pubPlace><placeName key="Reggio Emilia">Reggio Emilia</placeName></pubPlace>
+                <date when="2025">2025</date>
+                <availability>
+                    <p>Open access</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title type="chapter">Diana, Princess of Wales - In Her Own Words</title>. In 
+                    <title type="main">Diana: Her True Story</title>
+                    <date when="2017">2017</date>
+                    <publisher>Michael O'Mara Book</publisher>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Faithful transcription of part of the childhood 
+                extract of the Princess Diana biography.</p>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="intro">
+            <head type="main" rend="uppercase">DIANA, PRINCESS OF WALES</head>
+            <head type="subtitle" rend="italic">In Her Own Words</head>
+            <p> Publisher’s note: The following words are selected from 
+                those given by <persName ref="DS">Diana</persName>, Princess of Wales in 1991-2 to Andrew 
+                Morton for publication in <persName ref="DS">Diana</persName>, Her True Story. The words are
+                all <persName ref="DS">Diana</persName>’s except for those in parentheses.</p>
+            </div>
+        </front>
+        <body>
+            <div type="chapter">
+                <head rend="bold">Childhood</head>
+                    <p>[My first memory] is really the smell of the inside of my pram. It was plastic and the smell of the hood. Vivid memory. I was born at home not in hospital.</p>
+                    <p>The biggest disruption was when Mummy decided to leg it. That’s the vivid memory we  have - the four of us. We all have our own interpretations of what should have happened and what did happen. 
+                    People took sides. Various people didn’t speak to each other. For my brother and I it was a very wishy-washy and painful experience.</p>
+                    <p>Charles [her brother] said to me the other day that he hadn’t realized how much the divorce had affected him until he got married and started having a life of his own.
+                    But my other sisters - their growing up eas done out of my sight. I saw them at holidays. I don’t remember it being a big thing.</p>
+                    <p>I idolized my eldest sister and i used to do all her washing when she came back from school. I packed her suitcase, ran her bath, made her bed - the whole lot. 
+                    I did it all and i thought it was wonderful. I always looked after my brother really. My sisters were very independent.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
