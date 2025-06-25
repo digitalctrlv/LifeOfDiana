@@ -3,29 +3,67 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
-            <listPerson>
-                <person xml:id="DS" sameAs="http://viaf.org/viaf/107032638">
-                    <persName xml:lang="en">Diana Spencer</persName>
-                    <persName xml:lang="it">Diana Spencer</persName>
-                    <birth when="1961-07-01"/>
-                    <death when="1997-08-31"/>
-                </person>
-            </listPerson>
+            <profileDesc>
+                <particDesc>
+                    <listPerson>
+                        <person xml:id="DS" sameAs="http://viaf.org/viaf/107032638">
+                            <persName xml:lang="en">Diana Spencer</persName>
+                            <birth when="1961-07-01"/>
+                            <death when="1997-08-31"/>
+                            <roleName>Princess of Wales</roleName>
+                        </person>
+                        <person xml:id="AM" sameAs="http://viaf.org/viaf/22238479">
+                            <persName xml:lang="en">Andrew Morton</persName>
+                            <birth when="1953"/>
+                            <roleName>Author</roleName>
+                        </person>
+                        <person xml:id="CS" sameAs="https://dbpedia.org/page/Charles_Spencer,_9th_Earl_Spencer">
+                            <persName xml:lang="en">Charles Edward Maurice Spencer</persName>
+                            <birth when="1964-05-20"/>
+                            <roleName>Viscount Althorp</roleName>
+                        </person>
+                        <person xml:id="FSK" sameAs="https://dbpedia.org/page/Frances_Shand_Kydd">
+                            <persName xml:lang="en">Frances Shand Kydd</persName>
+                            <birth when="1936-01-20"/>
+                            <death when="2004-06-03"/>
+                        </person>
+                        <person xml:id="EM" sameAs="https://dbpedia.org/page/Lady_Sarah_McCorquodale">
+                            <persName xml:lang="en">Elizabeth Sarah Lavinia McCorquodale</persName>
+                            <birth when="1955-03-19"/>
+                            <roleName>Lady Sarah Spencer</roleName>
+                        </person>
+                        <person xml:id="CF" sameAs="https://dbpedia.org/page/Jane_Fellowes,_Baroness_Fellowes">
+                            <persName xml:lang="en">Cynthia Jane Fellowes</persName>
+                            <birth when="1957-02-11"/>
+                            <roleName>Baroness Fellowes</roleName>
+                        </person>
+                        <listRelation type="personal">
+                            <relation name="parent" active="#FSK" passive="#DS #CS #EM #CF"/>
+                            <relation name="child" active="#DS #CS #EM #CF" passive="#FSK"/>
+                            <relation name="sister" active="#DS" passive="#CS #EM #CF"/>
+                            <relation name="brother" active="#CS" passive="#DS #EM #CF"/>
+                            <relation name="sister" active="#EM #CF" passive="#CS #DS"/>
+                        </listRelation>
+                    </listPerson>
+                </particDesc>
+                <listPlace>
+                    <place xml:id="wales">
+                        <placeName>Wales</placeName>
+                    </place>
+                </listPlace>
+            </profileDesc>
             <titleStmt>
                 <title>Extract from Diana: Her True Story</title>
                 <author>
-                    <forename>Andrew</forename>
-                    <surname>Morton</surname>
+                    <persName ref="AM">Andrew Morton</persName>
                 </author>
                 <editor>
-                    <forename>Alice</forename> 
-                    <surname>Spadavecchia</surname>
+                    <persName>Alice Spadavecchia</persName>
                 </editor>
             </titleStmt>
             <publicationStmt>
                 <publisher>
-                    <forename>Alice</forename> 
-                    <surname>Spadavecchia</surname>
+                    <persName>Alice Spadavecchia</persName>
                 </publisher>
                 <pubPlace><placeName key="Reggio Emilia">Reggio Emilia</placeName></pubPlace>
                 <date when="2025">2025</date>
@@ -35,10 +73,12 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl>
-                    <title type="chapter">Diana, Princess of Wales - In Her Own Words</title>. In 
-                    <title type="main">Diana: Her True Story</title>
+                    <author>Andrew Morton</author>
+                    <title type="chapter">Diana, Princess of <placeName ref="#wales">Wales</placeName> - In Her Own Words</title>. In 
+                    <title type="main" lang="en" xml:id="BT">Diana: Her True Story</title>
                     <date when="2017">2017</date>
                     <publisher>Michael O'Mara Book</publisher>
+                    <pubPlace key="London">London</pubPlace>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -61,11 +101,11 @@
             <div type="chapter">
                 <h4 rend="bold">Childhood</h4>
                 <p>[My first memory] is really the smell of the inside of my pram. It was plastic and the smell of the hood. Vivid memory. I was born at home not in hospital.</p>
-                <p>The biggest disruption was when Mummy decided to leg it. That’s the vivid memory we  have - the four of us. We all have our own interpretations of what should have happened and what did happen. 
-                    People took sides. Various people didn’t speak to each other. For my brother and I it was a very wishy-washy and painful experience.</p>
+                <p>The biggest disruption was when <persName ref="#FSK">Mummy</persName> decided to leg it. That’s the vivid memory we  have - the four of us. We all have our own interpretations of what should have happened and what did happen. 
+                    People took sides. Various people didn’t speak to each other. For my <persName ref="#CS">brother</persName> and I it was a very wishy-washy and painful experience.</p>
                 <p>Charles [her brother] said to me the other day that he hadn’t realized how much the divorce had affected him until he got married and started having a life of his own.
                     But my other sisters - their growing up eas done out of my sight. I saw them at holidays. I don’t remember it being a big thing.</p>
-                <p>I idolized my eldest sister and i used to do all her washing when she came back from school. I packed her suitcase, ran her bath, made her bed - the whole lot. 
+                <p>I idolized my <persName ref="#EM">eldest sister</persName> and i used to do all her washing when she came back from school. I packed her suitcase, ran her bath, made her bed - the whole lot. 
                     I did it all and i thought it was wonderful. I always looked after my brother really. My sisters were very independent.</p>
                 <pb n="23"/>
             </div>
