@@ -118,7 +118,7 @@ if publisher is not None:
 
 g.add((book_uri, SCHEMA.datePublished, Literal(publishDate, datatype = XSD.gYear)))
 g.add((book_uri, SCHEMA.locationCreated, Literal(publishPlace_text)))
-g.add((book_uri, SCHEMA.publisher, Literal(publisher_uri)))
+g.add((book_uri, SCHEMA.publisher, publisher_uri))
       
 
 
