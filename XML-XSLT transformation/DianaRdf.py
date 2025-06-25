@@ -100,9 +100,8 @@ book_title = root.find(".//tei:sourceDesc/tei:bibl/tei:title[@type='main']", ns)
 if book_title is not None:
     id = book_title.get("{http://www.w3.org/XML/1998/namespace}id")
     book_uri = EX[id]
-    book_obj = book_title.text
 
-g.add((author_uri, SCHEMA.author, Literal(book_obj)))
+g.add((author_uri, SCHEMA.author, Literal(book_uri)))
 
 publishDate = root.find(".//tei:sourceDesc/tei:bibl/tei:date", ns)
 if publishDate is not None:
@@ -114,19 +113,20 @@ if publishPlace is not None:
 
 publisher = root.find(".//tei:sourceDesc/tei:bibl/tei:publisher", ns)
 if publisher is not None:
-    publisher_text = publisher.text
+    id = publisher.get("{http://www.w3.org/XML/1998/namespace}id")
+    publisher_uri = EX[id]
 
 g.add((book_uri, SCHEMA.datePublished, Literal(publishDate, datatype = XSD.gYear)))
 g.add((book_uri, SCHEMA.locationCreated, Literal(publishPlace_text)))
-g.add((book_uri, SCHEMA.publisher, Literal(publisher_text)))
+g.add((book_uri, SCHEMA.publisher, Literal(publisher_uri)))
       
 
 
 triples = set(g)
-print(f"Numero di triple nel grafo: {len(g)}")
+#print(f"Numero di triple nel grafo: {len(g)}")
 
-#for t in triples:
-   # print(t)
+for t in triples:
+    print(t)
 
 
 
