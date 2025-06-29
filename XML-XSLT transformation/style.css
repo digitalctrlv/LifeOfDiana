@@ -4,7 +4,7 @@ body {font-family: 'Times New Roman', Times, serif;
 
 .page { background-color:beige;
         width: 51%;
-        height:140%;
+        height:115%;
     margin: 1em auto;
 padding: 0.2em 0.2em;        /* spazio interno sopra/sotto e ai lati */
   box-sizing: border-box;
