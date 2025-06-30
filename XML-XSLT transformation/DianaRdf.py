@@ -12,19 +12,25 @@ ns = {"tei":"http://www.tei-c.org/ns/1.0"}
 g = Graph()
 
 EX = Namespace("http://example.org/")
-SCHEMA = Namespace("http://schema.org/")
-owl = Namespace("https://www.w3.org/TR/owl-ref/")
+schema = Namespace("http://schema.org/")
+owl = Namespace("https://www.w3.org/2002/07/owl#")
 wdt = Namespace("http://www.wikidata.org/prop/direct/")
+
+g.bind("foaf", FOAF)
+g.bind("ns1", schema)
+g.bind("ns2", wdt)
+g.bind("ns3", owl)
+g.bind("xsd", XSD)
+
 
 for person in root.findall(".//tei:person", ns):
     id = person.get("{http://www.w3.org/XML/1998/namespace}id")
     uri = EX[id]
     #print(f"found person with id: {id}")
-    #g.add((uri, RDF.type, FOAF.Person))
+    g.add((uri, RDF.type, FOAF.Person))
     ac = person.get("sameAs")
-    #if ac:
-        #print(f"sameAs: {ac}")
-    g.add((uri, owl.sameAs, URIRef(ac)))
+    if ac is not None:  
+        g.add((uri, owl.sameAs, URIRef(ac)))
     
     pers_name = person.find("tei:persName", ns)
     if pers_name is not None and pers_name.text is not None:
@@ -45,12 +51,12 @@ for person in root.findall(".//tei:person", ns):
     death = person.find("tei:death[@when]", ns)
     if death is not None:
         death = death.get("when")
-        if len(death) == 4 and birth.isdigit():
+        if len(death) == 4 and death.isdigit():
             datatype = XSD.gYear
         else:
             datatype = XSD.date
     
-        g.add((uri, SCHEMA.deathDate, Literal(death, datatype=datatype)))
+        g.add((uri, schema.deathDate, Literal(death, datatype=datatype)))
     
     positionHeld = person.find("tei:roleName", ns)
     if positionHeld is not None and positionHeld.text:
@@ -78,18 +84,19 @@ for person in root.findall(".//tei:person", ns):
             p_uris = [EX[id.lstrip("#")] for id in passive]
             
             if rel_name == "parent":
-                prop = SCHEMA.parent
+                prop = schema.parent
 
             if rel_name == "child":
-                prop = SCHEMA.children
+                prop = schema.children
 
             if rel_name == "brother" or rel_name == "sister":
-                prop = SCHEMA.sibling
+                prop = schema.sibling
 
             for a_uri in a_uris:
                 for p_uri in p_uris:
 
                     g.add((a_uri, prop, p_uri))
+                    
             
 author_name = root.find(".//tei:titleStmt/tei:author/tei:persName", ns)
 if author_name is not None:
@@ -101,7 +108,7 @@ if book_title is not None:
     id = book_title.get("{http://www.w3.org/XML/1998/namespace}id")
     book_uri = EX[id]
 
-g.add((author_uri, SCHEMA.author, Literal(book_uri)))
+g.add((author_uri, schema.author, book_uri))
 
 publishDate = root.find(".//tei:sourceDesc/tei:bibl/tei:date", ns)
 if publishDate is not None:
@@ -116,19 +123,20 @@ if publisher is not None:
     id = publisher.get("{http://www.w3.org/XML/1998/namespace}id")
     publisher_uri = EX[id]
 
-g.add((book_uri, SCHEMA.datePublished, Literal(publishDate, datatype = XSD.gYear)))
-g.add((book_uri, SCHEMA.locationCreated, Literal(publishPlace_text)))
-g.add((book_uri, SCHEMA.publisher, publisher_uri))
+g.add((book_uri, schema.datePublished, Literal(publishDate, datatype = XSD.gYear)))
+g.add((book_uri, schema.locationCreated, Literal(publishPlace_text)))
+g.add((book_uri, schema.publisher, publisher_uri))
       
 
 
 triples = set(g)
 #print(f"Numero di triple nel grafo: {len(g)}")
 
+print(len(g))
 for t in triples:
     print(t)
 
-
+g.serialize(format="turtle", destination="XML_to_RDF.ttl")
 
 
 

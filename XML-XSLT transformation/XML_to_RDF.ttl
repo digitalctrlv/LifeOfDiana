@@ -1,0 +1,68 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <https://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/AM> a foaf:Person ;
+    schema:author <http://example.org/BT> ;
+    wdt:P39 "Author" ;
+    foaf:birthday "1953"^^xsd:gYear ;
+    foaf:name "Andrew Morton" ;
+    owl:sameAs <http://viaf.org/viaf/22238479> .
+
+<http://example.org/BT> schema:datePublished "2017"^^xsd:gYear ;
+    schema:locationCreated "London" ;
+    schema:publisher <http://example.org/publisher> .
+
+<http://example.org/CF> a foaf:Person ;
+    schema:children <http://example.org/FSK> ;
+    schema:sibling <http://example.org/CS>,
+        <http://example.org/DS>,
+        <http://example.org/EM> ;
+    wdt:P39 "Baroness Fellowes" ;
+    foaf:birthday "1957-02-11"^^xsd:date ;
+    foaf:name "Cynthia Jane Fellowes" ;
+    owl:sameAs <https://dbpedia.org/page/Jane_Fellowes,_Baroness_Fellowes> .
+
+<http://example.org/CS> a foaf:Person ;
+    schema:children <http://example.org/FSK> ;
+    schema:sibling <http://example.org/CF>,
+        <http://example.org/DS>,
+        <http://example.org/EM> ;
+    wdt:P39 "Viscount Althorp" ;
+    foaf:birthday "1964-05-20"^^xsd:date ;
+    foaf:name "Charles Edward Maurice Spencer" ;
+    owl:sameAs <https://dbpedia.org/page/Charles_Spencer,_9th_Earl_Spencer> .
+
+<http://example.org/DS> a foaf:Person ;
+    schema:children <http://example.org/FSK> ;
+    schema:deathDate "1997-08-31"^^xsd:date ;
+    schema:sibling <http://example.org/CF>,
+        <http://example.org/CS>,
+        <http://example.org/EM> ;
+    wdt:P39 "Princess of Wales" ;
+    foaf:birthday "1961-07-01"^^xsd:date ;
+    foaf:name "Diana Spencer" ;
+    owl:sameAs <http://viaf.org/viaf/107032638> .
+
+<http://example.org/EM> a foaf:Person ;
+    schema:children <http://example.org/FSK> ;
+    schema:sibling <http://example.org/CF>,
+        <http://example.org/CS>,
+        <http://example.org/DS> ;
+    wdt:P39 "Lady Sarah Spencer" ;
+    foaf:birthday "1955-03-19"^^xsd:date ;
+    foaf:name "Elizabeth Sarah Lavinia McCorquodale" ;
+    owl:sameAs <https://dbpedia.org/page/Lady_Sarah_McCorquodale> .
+
+<http://example.org/FSK> a foaf:Person ;
+    schema:deathDate "2004-06-03"^^xsd:date ;
+    schema:parent <http://example.org/CF>,
+        <http://example.org/CS>,
+        <http://example.org/DS>,
+        <http://example.org/EM> ;
+    foaf:birthday "1936-01-20"^^xsd:date ;
+    foaf:name "Frances Shand Kydd" ;
+    owl:sameAs <https://dbpedia.org/page/Frances_Shand_Kydd> .
+

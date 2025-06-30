@@ -42,7 +42,8 @@
                             <relation name="child" active="#DS #CS #EM #CF" passive="#FSK"/>
                             <relation name="sister" active="#DS" passive="#CS #EM #CF"/>
                             <relation name="brother" active="#CS" passive="#DS #EM #CF"/>
-                            <relation name="sister" active="#EM #CF" passive="#CS #DS"/>
+                            <relation name="sister" active="#EM" passive="#CF #CS #DS"/>
+                            <relation name="sister" active="#CF" passive="#EM #CS #DS"/>
                         </listRelation>
                     </listPerson>
                 </particDesc>
