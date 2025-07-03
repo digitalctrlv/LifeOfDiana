@@ -202,6 +202,21 @@ body {
     margin-top: 40px;
 }
 
+table, th, td {
+  border-collapse:collapse;
+  height: 40px;
+  padding: 5px;
+}
+th {
+  background-color: #96D4D4;
+}
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
 footer {
     background-color: rgba(232, 99, 78, 0.7);
     color: white;
