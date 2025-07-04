@@ -1,0 +1,69 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:BT schema:author lod:AM ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:locationCreated <https://dbpedia.org/page/London> ;
+    schema:publisher lod:publisher .
+
+lod:AM a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/22238479> ;
+    wdt:P39 "Author" ;
+    foaf:birthday "1953"^^xsd:gYear ;
+    foaf:name "Andrew Morton" .
+
+lod:CF a foaf:Person ;
+    owl:sameAs <https://dbpedia.org/page/Jane_Fellowes,_Baroness_Fellowes> ;
+    wdt:P39 "Baroness Fellowes" ;
+    foaf:birthday "1957-02-11"^^xsd:date ;
+    foaf:name "Cynthia Jane Fellowes" ;
+    schema:parent lod:FSK ;
+    schema:sibling lod:CS,
+        lod:DS,
+        lod:EM .
+
+lod:CS a foaf:Person ;
+    owl:sameAs <https://dbpedia.org/page/Charles_Spencer,_9th_Earl_Spencer> ;
+    wdt:P39 "Viscount Althorp" ;
+    foaf:birthday "1964-05-20"^^xsd:date ;
+    foaf:name "Charles Edward Maurice Spencer" ;
+    schema:parent lod:FSK ;
+    schema:sibling lod:CF,
+        lod:DS,
+        lod:EM .
+
+lod:DS a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/107032638> ;
+    wdt:P39 "Princess of Wales" ;
+    foaf:birthday "1961-07-01"^^xsd:date ;
+    foaf:name "Diana Spencer" ;
+    schema:deathDate "1997-08-31"^^xsd:date ;
+    schema:parent lod:FSK ;
+    schema:sibling lod:CF,
+        lod:CS,
+        lod:EM .
+
+lod:EM a foaf:Person ;
+    owl:sameAs <https://dbpedia.org/page/Lady_Sarah_McCorquodale> ;
+    wdt:P39 "Lady Sarah Spencer" ;
+    foaf:birthday "1955-03-19"^^xsd:date ;
+    foaf:name "Elizabeth Sarah Lavinia McCorquodale" ;
+    schema:parent lod:FSK ;
+    schema:sibling lod:CF,
+        lod:CS,
+        lod:DS .
+
+lod:FSK a foaf:Person ;
+    owl:sameAs <https://dbpedia.org/page/Frances_Shand_Kydd> ;
+    foaf:birthday "1936-01-20"^^xsd:date ;
+    foaf:name "Frances Shand Kydd" ;
+    schema:children lod:CF,
+        lod:CS,
+        lod:DS,
+        lod:EM ;
+    schema:deathDate "2004-06-03"^^xsd:date .
+
