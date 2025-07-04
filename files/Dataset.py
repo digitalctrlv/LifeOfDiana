@@ -56,7 +56,7 @@ g.add((Charles_uri, OWL.sameAs, URIRef("http://viaf.org/viaf/84034215")))
 
 
 #first item
-LadyDonYacht = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/Lady Diana on holiday in Portofino.csv", keep_default_na = False, encoding = "utf-8")
+LadyDonYacht = read_csv("../final_csv/Lady Diana on holiday in Portofino.csv", keep_default_na = False, encoding = "utf-8")
 
 for _, row in LadyDonYacht.iterrows():
   
@@ -79,7 +79,7 @@ for _, row in LadyDonYacht.iterrows():
     
 
 #second item
-CandleInTheWind = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/Candle in the Wind 1997.csv", keep_default_na = False, encoding = "utf-8")
+CandleInTheWind = read_csv("../final_csv/Candle in the Wind 1997.csv", keep_default_na = False, encoding = "utf-8")
 
 for _, row in CandleInTheWind.iterrows():
     
@@ -129,7 +129,7 @@ for _, row in CandleInTheWind.iterrows():
     
 
 #third item
-TheCrown =  read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/The Crown.csv", keep_default_na = False, encoding = "utf-8")
+TheCrown =  read_csv("../final_csv/The Crown.csv", keep_default_na = False, encoding = "utf-8")
 
 for _, row in TheCrown.iterrows():
    
@@ -206,7 +206,7 @@ for _, row in TheCrown.iterrows():
     
 
 #fourth item
-AlmaBridge = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/Alma Bridge.csv", keep_default_na=False,encoding = "utf-8")
+AlmaBridge = read_csv("../final_csv/Alma Bridge.csv", keep_default_na=False,encoding = "utf-8")
 
 for _, row in AlmaBridge.iterrows():
 
@@ -226,7 +226,7 @@ for _, row in AlmaBridge.iterrows():
 
 
 #fifth item
-LadyDCharity = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/AIDs_photo.csv", keep_default_na = None, encoding="utf-8")
+LadyDCharity = read_csv("../final_csv/AIDs_photo.csv", keep_default_na = None, encoding="utf-8")
 
 for _,row in LadyDCharity.iterrows():
     g.add((photo2, dc.title, Literal(row["Object"])))
@@ -243,7 +243,7 @@ for _,row in LadyDCharity.iterrows():
 
 
 #sixth item
-DianaHerTrueStory = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/Book.csv")
+DianaHerTrueStory = read_csv("../final_csv/Book.csv")
 
 for _, row in DianaHerTrueStory.iterrows():
 
@@ -278,7 +278,7 @@ for _, row in DianaHerTrueStory.iterrows():
 
 
 #item seven
-WeddingDress = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/Wedd_dress.csv", keep_default_na = None, encoding="utf-8")
+WeddingDress = read_csv("../final_csv/Wedd_dress.csv", keep_default_na = None, encoding="utf-8")
 
 for _, row in WeddingDress.iterrows():
     g.add((dress, dc.title, Literal(row["Title"])))
@@ -300,7 +300,7 @@ for _, row in WeddingDress.iterrows():
     
 
 #item eight
-SpencerTiara = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/Spencer Tiara.csv", keep_default_na = None, encoding="utf-8")
+SpencerTiara = read_csv("../final_csv/Spencer Tiara.csv", keep_default_na = None, encoding="utf-8")
 
 for _, row in SpencerTiara.iterrows():
     g.add((tiara, dc.title, Literal(row["object"])))
@@ -317,7 +317,7 @@ for _, row in SpencerTiara.iterrows():
 
 
 #item nine
-EngagementInterview = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/engagement_interview.csv", keep_default_na = None, encoding="utf-8")
+EngagementInterview = read_csv("../final_csv/engagement_interview.csv", keep_default_na = None, encoding="utf-8")
 
 for _,row in EngagementInterview.iterrows():
     g.add((interview, dc.title, Literal(row["name"])))
@@ -338,7 +338,7 @@ for _,row in EngagementInterview.iterrows():
 
 
 #ten item
-KensingtonPalace = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/kensingtonpalace-meta.csv", keep_default_na=False, encoding="utf-8")
+KensingtonPalace = read_csv("../final_csv/kensingtonpalace-meta.csv", keep_default_na=False, encoding="utf-8")
 
 for _, row in KensingtonPalace.iterrows():
     g.add((LadyDiana_uri, schema.homeLocation, apartments))
@@ -367,7 +367,7 @@ for _, row in KensingtonPalace.iterrows():
     g.add((Charles_uri, schema.owns, palace))
 
 #item eleven
-DivorceAnnouncement = read_csv("C:/Users/Utente/Desktop/LifeOfDiana/final_csv/panorama1995-object-meta.csv", keep_default_na = False, encoding="utf-8")
+DivorceAnnouncement = read_csv("../final_csv/panorama1995-object-meta.csv", keep_default_na = False, encoding="utf-8")
 
 for _,row in DivorceAnnouncement.iterrows():
     g.add((announcement, dc.title, Literal(row["title"])))
