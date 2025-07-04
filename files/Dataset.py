@@ -367,7 +367,7 @@ for _, row in KensingtonPalace.iterrows():
     g.add((Charles_uri, schema.owns, palace))
 
 #item eleven
-DivorceAnnouncement = read_csv("../final_csv/panorama1995-object-meta.csv", keep_default_na = False, encoding="utf-8")
+DivorceAnnouncement = read_csv("../final_csv/ny-divorce-meta.csv", keep_default_na = False, encoding="utf-8")
 
 for _,row in DivorceAnnouncement.iterrows():
     g.add((announcement, dc.title, Literal(row["title"])))
