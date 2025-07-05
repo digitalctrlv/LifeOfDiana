@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Average&family=Average+Sans&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Bentham&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 @media (max-width:1920px) {
     .hero-text {
@@ -8,15 +9,16 @@
 }
 
 body {
-    font-family: "Average Sans", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 400;
     font-style: normal;
     color: #3c3c3c
 }
 
+
 .hero-section {
     position: relative;
-    height: 80vh;
+    height: 110vh;
     overflow: hidden;
     transition: opacity 0.5s ease;
 }
@@ -34,15 +36,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(84, 83, 83, 0.2), rgba(0,0,0,0.6));
+    /* background: linear-gradient(to bottom, rgba(84, 83, 83, 0.2), rgba(0,0,0,0.6)); */
 }
 
 .hero-text {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 400;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
-    font-size: clamp(7rem, 10vw, 7rem);
-    color: white;
+    font-size: clamp(9rem, 11vw, 9rem);
+    color: rgb(247, 247, 247);
     text-align: right;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     line-height: 0.8;
@@ -57,29 +60,29 @@ body {
 }
 
 .navbar {
-    background-color: #000000ac !important;
+    background-color: #ffffffd2 !important;
 }
 
 .navbar-brand {
     font-weight: 600;
-    font-family: "Average Sans", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-style: normal; 
-    color: white !important;
+    color: #7b1010 !important;
 }
 
 .nav-link {
-    color: rgba(244, 244, 244, 0.85) !important;
+    color: rgba(0, 0, 0, 0.85) !important;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav-link:hover {
-    color: rgb(232, 99, 78) !important;
+    color: #7b1010 !important;
 }
 
 .active {
-    color: rgb(232, 99, 78) !important;
-    border-bottom: 2px solid rgb(232, 99, 78);
+    color: #7b1010 !important;
+    border-bottom: 2px solid #7b1010;
 }
 
 .archive-card {
@@ -87,7 +90,7 @@ body {
     height: 250px;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -119,14 +122,15 @@ body {
 }
 
 .archive-card:hover .card-overlay {
-    background: rgba(0,0,0,0.6);
+    background: rgba(255, 255, 255, 0.826);
     opacity: 1;
 }
 
 .card-title {
-    color: white;
+    color: #7b1010;
     font-weight: 600;
-    font-family: "Average Sans", sans-serif;
+    font-size: 2rem;
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
     padding: 10px;
     transform: translateY(20px);
@@ -145,7 +149,7 @@ body {
 }
 
 .modal-header {
-    background-color: rgb(232, 99, 78);
+    background-color: #7b1010;
     color: white;
     border-bottom: none;
 }
@@ -156,21 +160,42 @@ body {
     margin-bottom: 15px;
 }
 
+.modal-title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.modal-subtitle {
+    font-family: "Average Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #acacac;
+    margin-top: 20px;
+}
+
 .external-link {
     display: inline-block;
     margin-top: 10px;
-    color: #1a3a5f;
+    color: #7b1010;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
+.external-link::before {
+    font-size: 1rem;
+}
+
 .external-link:hover {
-    color: #0d1e2f;
+    color: #b3b3b3;
 }
 
 .section-title {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 10vw; 
@@ -178,6 +203,69 @@ body {
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 15px;
+}
+
+.section-title2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7.5vw; 
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.section-lower-title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: #acacac;
+    margin-bottom: 20px;
+}
+
+.h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vw; 
+    color: #7b1010;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #6d6f70;
+}
+
+.h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; 
+    color: #7b1010;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem; 
+    color: #020202;
+    position: relative;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
 }
 
 .section-title::after {
@@ -190,16 +278,64 @@ body {
     background-color: #6d6f70;
 }
 
+.section-title2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #6d6f70;
+}
+
+.blockquote {
+    padding: 40px 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+    color:#040404;
+}
+
+.blockquote-footer {
+    font-family: "Average Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #6d6f70;
+    margin-top: 0px;
+    background-color: #f8f9fa;
+}
+
 #domain-study {
     background-color: #f8f9fa;
     padding: 60px 0;
     margin-top: 40px;
 }
 
+#know-org {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
 #metadata {
     background-color: #f8f9fa;
-    padding: 60px 0;
-    margin-top: 40px;
+    padding: 40px 0;
+    margin-top: 10px;
+}
+
+#metadata-analysis {
+    padding: 40px 0;
+    margin-top: 10px;
+}
+
+#theoretical-model {
+    padding: 40px 0;
+    margin-top: 10px;
+}
+
+#conceptual-model {
+    padding: 40px 0;
+    margin-top: 10px;
 }
 
 table, th, td {
@@ -220,11 +356,92 @@ td {
 
 }
 
+/* zoomable images */
+.zoomable-image {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    max-width: 100%;
+    height: auto;
+}
 
+.zoomable-image:hover {
+    transform: scale(1.05);
+}
 
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: zoom-out;
+}
+
+.modal-content-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10000;
+}
+
+.zoom-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.zoom-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.zoom-hint {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+}
 
 footer {
-    background-color: rgba(232, 99, 78, 0.7);
+    background-color: rgba(155, 155, 155, 0.7);
     color: white;
     padding: 30px 0;
 }
