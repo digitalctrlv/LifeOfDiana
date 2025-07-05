@@ -1,0 +1,30 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:LadyDianaOnHolidayInPortofino a schema:Photograph ;
+    dc:subject "Lady Diana, Princess of Wales, sitting on the diving board of Mohammed Al Fayed's private yacht 'Jonikal' as a seagull flies overhead" ;
+    dc:title "Lady Diana on holiday in Portofino" ;
+    foaf:depicts lod:LadyDiana ;
+    schema:copyrightHolder "Sygma Premium" ;
+    schema:creator "Stephane Cardinale - Corbis" ;
+    schema:dateCreated "1997-08-24"^^xsd:date ;
+    schema:identifier "news-31717-003.jpg" ;
+    schema:locationCreated wd:Q232782 ;
+    schema:provider <http://viaf.org/viaf/151544970> ;
+    schema:uploadDate "2016-08-24"^^xsd:date .
+
+dcmitype:StillImage rdfs:subClassOf schema:Image .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+
+schema:Image rdfs:subClassOf schema:CreativeWork .
+
+schema:Photograph rdfs:subClassOf dcmitype:StillImage .
+

@@ -1,0 +1,48 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+crm:E8 crm:P22 lod:RoyalFamily ;
+    crm:P23 dbr:Daniel_Finch ;
+    crm:P24 lod:NottinghamHouse .
+
+lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
+    schema:memberOf lod:RoyalFamily ;
+    schema:owns lod:KensingtonPalace .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> ;
+    schema:homeLocation lod:Apartments .
+
+dbr:Christopher_Wren foaf:name "Chrisopher Wren" .
+
+<http://vocab.getty.edu/page/aat/300005743> rdfs:subClassOf <http://vocab.getty.edu/page/aat/300264550> .
+
+<http://vocab.getty.edu/page/aat/300264550> rdfs:subClassOf schema:CreativeWork .
+
+lod:Apartments schema:isPartOf lod:KensingtonPalace .
+
+lod:NottinghamHouse schema:creationDate "1605"^^xsd:gYear ;
+    schema:creator "Sir George Coppin" .
+
+lod:RoyalFamily owl:sameAs dbr:British_royal_family ;
+    schema:owns lod:KensingtonPalace .
+
+lod:KensingtonPalace a <http://vocab.getty.edu/page/aat/300005743> ;
+    dc:title "Kensington Palace" ;
+    dcterms:replaces lod:NottinghamHouse ;
+    owl:sameAs <https://viaf.org/en/viaf/172644537> ;
+    schema:address "KENSINGTON PALACE, KENSINGTON PALACE W8" ;
+    schema:creator dbr:Christopher_Wren ;
+    schema:genre <http://vocab.getty.edu/page/aat/300107014> ;
+    schema:identifier 1223861 ;
+    schema:material "Stone" ;
+    schema:publishDate "1969-04-15" ;
+    schema:sourceOrganization dbr:Historic_England .
+

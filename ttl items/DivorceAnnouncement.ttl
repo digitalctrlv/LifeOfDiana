@@ -1,0 +1,43 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:DivorceAnnouncement a schema:NewsArticle ;
+    dc:language "en"^^xsd:language ;
+    dc:subject lod:Divorce ;
+    dc:title "It's Official: Charles and Diana Split, and She Pays Her Own Bills" ;
+    schema:articleSection "A" ;
+    schema:copyrightHolder dbr:The_New_York_Times ;
+    schema:creator dbr:Sarah_Lyall ;
+    schema:isPartOf "CXLV, 50534" ;
+    schema:locationCreated <http://vocab.getty.edu/page/tgn/7007567> ;
+    schema:pagination 9 ;
+    schema:publishDate "1996-08-29"^^xsd:date ;
+    schema:publisher dbr:The_New_York_Times .
+
+dbr:Sarah_Lyall foaf:name "Sarah Lyall" .
+
+lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
+    schema:memberOf lod:RoyalFamily .
+
+lod:Divorce a schema:Event ;
+    crm:P14 lod:Charles,
+        lod:LadyDiana .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+
+lod:RoyalFamily owl:sameAs dbr:British_royal_family .
+
+schema:NewsArticle rdfs:subClassOf schema:Text .
+
+schema:Text rdfs:subClassOf schema:CreativeWork .
+
+dbr:The_New_York_Times foaf:name "The New York Times" ;
+    schema:location <http://vocab.getty.edu/page/tgn/7007567> .
+

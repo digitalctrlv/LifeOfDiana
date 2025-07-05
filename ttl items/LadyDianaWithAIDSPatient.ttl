@@ -1,0 +1,30 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:LadyDianaWithAIDSPatient a schema:Photograph ;
+    dc:subject "Princess Diana and Aids Patients " ;
+    dc:title "Princess Diana shaking hands with an AIDS patient" ;
+    foaf:depicts lod:LadyDiana ;
+    schema:copyrightHolder "WireImage" ;
+    schema:creator "Anwar Hussein" ;
+    schema:dateCreated "1987-08-09"^^xsd:date ;
+    schema:identifier 14653447 ;
+    schema:locationCreated dbr:Middlesex_Hospital ;
+    schema:provider <http://viaf.org/viaf/151544970> ;
+    schema:uploadDate "2007-08-22"^^xsd:date .
+
+dcmitype:StillImage rdfs:subClassOf schema:Image .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+
+schema:Image rdfs:subClassOf schema:CreativeWork .
+
+schema:Photograph rdfs:subClassOf dcmitype:StillImage .
+

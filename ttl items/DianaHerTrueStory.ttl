@@ -1,0 +1,42 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:DianaHerTrueStory a schema:Book ;
+    dc:language "en"^^xsd:language ;
+    dc:subject lod:Charles,
+        lod:Divorce,
+        lod:LadyDiana,
+        lod:RoyalFamily ;
+    dc:title "Diana: Her True Story - In her Own Words" ;
+    schema:creator lod:AndrewMorton ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:genre "Biography" ;
+    schema:identifier "97818547927091854792709" ;
+    schema:mentions lod:Apartments,
+        lod:KensingtonPalace ;
+    schema:publisher "Michael O'Mara Books" ;
+    schema:sourceOrganization lod:Archiginnasio .
+
+lod:AndrewMorton owl:sameAs <http://viaf.org/viaf/22238479> ;
+    foaf:name "Andrew Morton" .
+
+lod:Archiginnasio owl:sameAs dbr:Archiginnasio_of_Bologna ;
+    schema:location <http://viaf.org/viaf/5185150647115410860003> .
+
+lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
+    schema:memberOf lod:RoyalFamily .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+
+schema:Book rdfs:subClassOf schema:Text .
+
+schema:Text rdfs:subClassOf schema:CreativeWork .
+
+lod:RoyalFamily owl:sameAs dbr:British_royal_family .
+

@@ -1,0 +1,69 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:TheCrown a schema:TVSeries ;
+    dc:language "en"^^xsd:language ;
+    dc:title "The Crown" ;
+    owl:sameAs <https://viaf.org/en/viaf/3838148997596659870003> ;
+    foaf:depicts lod:AlmaBridge,
+        lod:BuckinghamPalace,
+        lod:Charles,
+        lod:DianaHerTrueStory,
+        lod:KensingtonPalace,
+        lod:LadyDFuneral,
+        lod:LadyDiana,
+        lod:LadyDianaOnHolidayInPortofino,
+        lod:NottinghamHouse,
+        lod:RoyalFamily,
+        lod:RoyalWedding,
+        lod:Tiara,
+        lod:WeddingDress ;
+    schema:actor lod:ElizabethDebicki,
+        lod:EmmaLouiseCorrin ;
+    schema:creator lod:PeterMorgan ;
+    schema:genre "Biographical, Drama, Historical" ;
+    schema:locationCreated "Ardverikie Estate, Kinloch Laggan, Newtonmore, Highland, Scotland, UK (Balmoral Castle in Scotland)" ;
+    schema:producer lod:LeftBankPictures,
+        lod:SonyPictureTelevision,
+        "Sony Pictures Television Production UK" ;
+    schema:provider <https://viaf.org/en/viaf/110144647635343459670> ;
+    schema:uploadDate "2016-11-05"^^xsd:date .
+
+dcmitype:MovingImage rdfs:subClassOf schema:Image .
+
+lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
+    schema:memberOf lod:RoyalFamily .
+
+lod:ElizabethDebicki owl:sameAs <http://viaf.org/viaf/305280245> ;
+    foaf:name "Elizabeth Debicki" ;
+    schema:roleName lod:LadyDiana .
+
+lod:EmmaLouiseCorrin owl:sameAs <http://viaf.org/viaf/1883161881819434100005> ;
+    foaf:name "Emma-Louise Corrin" ;
+    schema:roleName lod:LadyDiana .
+
+lod:LeftBankPictures owl:sameAs <http://viaf.org/viaf/130591214> ;
+    foaf:name "Left Bank Pictures" .
+
+lod:PeterMorgan owl:sameAs wd:Q948122 ;
+    foaf:name "Peter Morgan" .
+
+lod:SonyPictureTelevision owl:sameAs wd:Q652390 ;
+    foaf:name "Sony Pictures Television" .
+
+schema:Image rdfs:subClassOf schema:CreativeWork .
+
+schema:TVSeries rdfs:subClassOf dcmitype:MovingImage .
+
+lod:RoyalFamily owl:sameAs dbr:British_royal_family .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+

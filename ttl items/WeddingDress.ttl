@@ -1,0 +1,39 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:RoyalWedding a schema:Event ;
+    dc:date "1981-07-29"^^xsd:date ;
+    crm:P14 lod:Charles,
+        lod:LadyDiana ;
+    crm:P16 lod:WeddingDress ;
+    schema:location <http://vocab.getty.edu/tgn/7011781> .
+
+<http://vocab.getty.edu/aat/300255177> rdfs:subClassOf <http://vocab.getty.edu/page/aat/300209261> .
+
+<http://vocab.getty.edu/page/aat/300209261> rdfs:subClassOf schema:CreativeWork .
+
+lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
+    schema:memberOf lod:RoyalFamily .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+
+lod:RoyalFamily owl:sameAs dbr:British_royal_family .
+
+lod:SpencerFamily owl:sameAs dbr:Spencer_family .
+
+lod:WeddingDress a <http://vocab.getty.edu/aat/300255177> ;
+    dc:relation lod:Tiara ;
+    dc:title "Lady Diana Spencer's Wedding Dress" ;
+    schema:color "Ivory" ;
+    schema:copyrightHolder lod:SpencerFamily,
+        "David Emanuel, Elizabeth Emanuel" ;
+    schema:creator "David Emanuel, Elizabeth Emanuel" ;
+    schema:location "Spencer Family Collection" ;
+    schema:material "Ivory silk taffeta, antique lace, pearls, sequins" .
+

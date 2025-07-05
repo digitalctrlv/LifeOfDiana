@@ -1,0 +1,47 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:LadyDFuneral a schema:Event ;
+    schema:location <http://vocab.getty.edu/page/tgn/1100068> ;
+    schema:workPerformed lod:CandleInTheWind .
+
+lod:CandleInTheWind a schema:MusicComposition ;
+    dc:language "en"^^xsd:language ;
+    dc:title "Candle in the Wind ’97 (live, 1997-09-06: Westminster Abbey, London, England, UK)" ;
+    owl:sameAs wd:Q2449307 ;
+    schema:about lod:LadyDiana ;
+    schema:contributor lod:BernieTaupin ;
+    schema:creator lod:EltonJohn ;
+    schema:dateCreated "1997-09-06"^^xsd:date ;
+    schema:duration "4:03" ;
+    schema:genre dbr:Ballad,
+        dbr:Classic_rock,
+        dbr:Pop,
+        dbr:Rock_music,
+        "Singer-songwriter" ;
+    schema:identifier "T-011.520.443-7, T-070.028.244-5" ;
+    schema:isBasedOn "Candle in the Wind" ;
+    schema:locationCreated <http://vocab.getty.edu/page/tgn/1100068> ;
+    schema:lyricist lod:BernieTaupin ;
+    schema:publisher lod:songPublisher .
+
+lod:EltonJohn owl:sameAs <http://viaf.org/viaf/84034533> ;
+    foaf:name "Elton John" .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> .
+
+lod:songPublisher owl:sameAs wd:Q57818158 ;
+    foaf:name "Universal–Songs of PolyGram International, Inc." .
+
+schema:MusicComposition rdfs:subClassOf schema:CreativeWork .
+
+lod:BernieTaupin owl:sameAs dbr:Bernie_Taupin ;
+    foaf:name "Bernie Taupin" .
+

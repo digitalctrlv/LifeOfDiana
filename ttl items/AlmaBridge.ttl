@@ -1,0 +1,26 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lod: <https://github.com/digitalctrlv/LifeOfDiana/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lod:LadyDiana owl:sameAs <http://viaf.org/viaf/107032638> ;
+    schema:deathPlace lod:AlmaBridge .
+
+<http://vocab.getty.edu/aat/300007838> rdfs:subClassOf <http://vocab.getty.edu/page/aat/300264550> .
+
+<http://vocab.getty.edu/page/aat/300264550> rdfs:subClassOf schema:CreativeWork .
+
+lod:AlmaBridge a <http://vocab.getty.edu/aat/300007838> ;
+    dc:title "Alma Bridge" ;
+    schema:copyrightHolder "Minister of Equipment, Transport, Housing, Tourism, and the Sea" ;
+    schema:creator "Auguste Arsac, M. Dougnac",
+        "J. F. Coste, Ch. Blanc" ;
+    schema:endDate "1974"^^xsd:gYear ;
+    schema:geoCrosses <http://viaf.org/viaf/316432461> ;
+    schema:location wd:Q90 ;
+    schema:material "Steel bridge" ;
+    schema:startDate "1970"^^xsd:gYear .
+
