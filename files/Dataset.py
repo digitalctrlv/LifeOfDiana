@@ -65,11 +65,9 @@ for _, row in LadyDonYacht.iterrows():
     g.add((photo1, schema.copyrightHolder, Literal(row["Source"])))
     g.add((photo1, schema.dateCreated, Literal(row["Creation date"], datatype=XSD.date)))
     g.add((photo1, schema.uploadDate, Literal(row["Upload date"], datatype=XSD.date)))  
-    g.add((photo1, RDFS.subClassOf, dcmitype.StillImage))
+    g.add((schema.Photograph, RDFS.subClassOf, dcmitype.StillImage))
     g.add((dcmitype.StillImage, RDFS.subClassOf, schema.Image))
     g.add((schema.Image, RDFS.subClassOf, schema.CreativeWork))
-
-    #triples outside the csv
     g.add((photo1, RDF.type, schema.Photograph))
     g.add((photo1, dc.title, Literal(row["Item"])))
     g.add((photo1, schema.provider, URIRef("http://viaf.org/viaf/151544970")))
@@ -105,7 +103,7 @@ for _, row in CandleInTheWind.iterrows():
     g.add((song, schema.genre, dbr.Ballad))
     g.add((song, schema.genre, dbr.Classic_rock))
     g.add((song, schema.genre, dbr.Pop))
-    g.add((song, schema.workPerformed, funeral))
+    g.add((funeral, schema.workPerformed, song))
     g.add((funeral, RDF.type, schema.Event))
     g.add((song, schema.locationCreated, URIRef("http://vocab.getty.edu/page/tgn/1100068"))) # westminster
     g.add((funeral, schema.location, URIRef("http://vocab.getty.edu/page/tgn/1100068"))) # westminster
@@ -288,12 +286,15 @@ for _, row in WeddingDress.iterrows():
     g.add((dress, schema.color, Literal("Ivory")))
     g.add((dress, dc.relation, tiara))
     g.add((dress, schema.copyrightHolder, Spencers))
+    g.add((Spencers, OWL.sameAs, dbr.Spencer_family))
     g.add((dress, schema.copyrightHolder, Literal(row["Creator"])))
     g.add((dress, schema.location, Literal(row["Current Location"])))
     g.add((URIRef("http://vocab.getty.edu/aat/300255177"), RDFS.subClassOf, URIRef("http://vocab.getty.edu/page/aat/300209261")))
     g.add((URIRef("http://vocab.getty.edu/page/aat/300209261"), RDFS.subClassOf, schema.CreativeWork))
     g.add((wedding, crm.P16, dress))
     g.add((wedding, RDF.type, schema.Event))
+    g.add((wedding, crm.P14, LadyDiana_uri))
+    g.add((wedding, crm.P14, Charles_uri))
     g.add((wedding, schema.location, URIRef("http://vocab.getty.edu/tgn/7011781")))
     g.add((wedding, dc.date, Literal("1981-07-29", datatype=XSD.date)))
     
@@ -368,25 +369,26 @@ for _, row in KensingtonPalace.iterrows():
 
 #item eleven
 DivorceAnnouncement = read_csv("../final_csv/ny-divorce-meta.csv", keep_default_na = False, encoding="utf-8")
+print(DivorceAnnouncement.columns.tolist())
 
 for _,row in DivorceAnnouncement.iterrows():
     g.add((announcement, dc.title, Literal(row["headline"])))
     g.add((announcement, RDF.type, schema.NewsArticle))
     g.add((schema.NewsArticle, RDFS.subClassOf, schema.Text))
     g.add((announcement, dc.language, Literal(lang_data1, datatype=XSD.language)))
-    g.add((announcement, schema.publisher, Literal(row["publisher"])))
-    g.add((announcement.publisher, OWL.sameAs, dbr.The_New_York_Times))
+    g.add((announcement, schema.publisher, dbr.The_New_York_Times))
+    g.add((dbr.The_New_York_Times, FOAF.name, Literal(row["publisher"])))
     g.add((announcement, schema.publishDate, Literal("1996-08-29", datatype=XSD.date)))
     g.add((announcement, schema.copyrightHolder, dbr.The_New_York_Times))
-    g.add((announcement, schema.isPartOf, Literal("CXLV, 50534")))
+    g.add((announcement, schema.isPartOf, Literal(row["isPartOf"])))
     g.add((announcement, schema.articleSection, Literal(row["articleSection"])))
     g.add((announcement, schema.pagination, Literal(row["pageNumber"])))
     g.add((announcement, schema.locationCreated, URIRef("http://vocab.getty.edu/page/tgn/7007567")))
     g.add((dbr.The_New_York_Times, schema.location, URIRef("http://vocab.getty.edu/page/tgn/7007567")))
     g.add((announcement, dc.subject, divorce))
     
-    g.add((announcement, schema.creator, Literal(row["author"])))
-    g.add((announcement.creator, OWL.sameAs, dbr.Sarah_Lyall))
+    g.add((announcement, schema.creator, dbr.Sarah_Lyall))
+    g.add((dbr.Sarah_Lyall, FOAF.name, Literal(row["author"])))
 
     g.add((divorce, crm.P14, Charles_uri))
     g.add((divorce, crm.P14, LadyDiana_uri))
@@ -395,7 +397,7 @@ for _,row in DivorceAnnouncement.iterrows():
 g.add((Charles_uri, schema.memberOf, royals))
 
 for triples in g:
-    print(triples)
+   print(triples)
 
 print(len(g))
 g.serialize(format="turtle", destination="ItemsDataset.ttl")

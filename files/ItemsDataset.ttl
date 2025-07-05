@@ -15,27 +15,6 @@ crm:E8 crm:P22 lod:RoyalFamily ;
     crm:P23 dbr:Daniel_Finch ;
     crm:P24 lod:NottinghamHouse .
 
-lod:CandleInTheWind a schema:MusicComposition ;
-    dc:language "en"^^xsd:language ;
-    dc:title "Candle in the Wind ’97 (live, 1997-09-06: Westminster Abbey, London, England, UK)" ;
-    owl:sameAs wd:Q2449307 ;
-    schema:about lod:LadyDiana ;
-    schema:contributor lod:BernieTaupin ;
-    schema:creator lod:EltonJohn ;
-    schema:dateCreated "1997-09-06"^^xsd:date ;
-    schema:duration "4:03" ;
-    schema:genre dbr:Ballad,
-        dbr:Classic_rock,
-        dbr:Pop,
-        dbr:Rock_music,
-        "Singer-songwriter" ;
-    schema:identifier "T-011.520.443-7, T-070.028.244-5" ;
-    schema:isBasedOn "Candle in the Wind" ;
-    schema:locationCreated <http://vocab.getty.edu/page/tgn/1100068> ;
-    schema:lyricist lod:BernieTaupin ;
-    schema:publisher lod:songPublisher ;
-    schema:workPerformed lod:LadyDFuneral .
-
 lod:DivorceAnnouncement a schema:NewsArticle ;
     dc:language "en"^^xsd:language ;
     dc:subject lod:Divorce ;
@@ -45,7 +24,8 @@ lod:DivorceAnnouncement a schema:NewsArticle ;
     schema:creator dbr:Sarah_Lyall ;
     schema:isPartOf "CXLV, 50534" ;
     schema:locationCreated <http://vocab.getty.edu/page/tgn/7007567> ;
-    schema:pagination "9" ;
+    schema:pagination 9 ;
+    schema:publishDate "1996-08-29"^^xsd:date ;
     schema:publisher dbr:The_New_York_Times .
 
 lod:EngagementInterview a dcmitype:MovingImage ;
@@ -123,6 +103,26 @@ lod:AndrewMorton owl:sameAs <http://viaf.org/viaf/22238479> ;
 lod:Archiginnasio owl:sameAs dbr:Archiginnasio_of_Bologna ;
     schema:location <http://viaf.org/viaf/5185150647115410860003> .
 
+lod:CandleInTheWind a schema:MusicComposition ;
+    dc:language "en"^^xsd:language ;
+    dc:title "Candle in the Wind ’97 (live, 1997-09-06: Westminster Abbey, London, England, UK)" ;
+    owl:sameAs wd:Q2449307 ;
+    schema:about lod:LadyDiana ;
+    schema:contributor lod:BernieTaupin ;
+    schema:creator lod:EltonJohn ;
+    schema:dateCreated "1997-09-06"^^xsd:date ;
+    schema:duration "4:03" ;
+    schema:genre dbr:Ballad,
+        dbr:Classic_rock,
+        dbr:Pop,
+        dbr:Rock_music,
+        "Singer-songwriter" ;
+    schema:identifier "T-011.520.443-7, T-070.028.244-5" ;
+    schema:isBasedOn "Candle in the Wind" ;
+    schema:locationCreated <http://vocab.getty.edu/page/tgn/1100068> ;
+    schema:lyricist lod:BernieTaupin ;
+    schema:publisher lod:songPublisher .
+
 lod:DianaHerTrueStory a schema:Book ;
     dc:language "en"^^xsd:language ;
     dc:subject lod:Charles,
@@ -150,10 +150,13 @@ lod:EmmaLouiseCorrin owl:sameAs <http://viaf.org/viaf/1883161881819434100005> ;
     foaf:name "Emma-Louise Corrin" ;
     schema:roleName lod:LadyDiana .
 
+lod:LadyDFuneral a schema:Event ;
+    schema:location <http://vocab.getty.edu/page/tgn/1100068> ;
+    schema:workPerformed lod:CandleInTheWind .
+
 lod:LadyDianaOnHolidayInPortofino a schema:Photograph ;
     dc:subject "Lady Diana, Princess of Wales, sitting on the diving board of Mohammed Al Fayed's private yacht 'Jonikal' as a seagull flies overhead" ;
     dc:title "Lady Diana on holiday in Portofino" ;
-    rdfs:subClassOf dcmitype:StillImage ;
     foaf:depicts lod:LadyDiana ;
     schema:copyrightHolder "Sygma Premium" ;
     schema:creator "Stephane Cardinale - Corbis" ;
@@ -171,6 +174,8 @@ lod:PeterMorgan owl:sameAs wd:Q948122 ;
 
 lod:RoyalWedding a schema:Event ;
     dc:date "1981-07-29"^^xsd:date ;
+    crm:P14 lod:Charles,
+        lod:LadyDiana ;
     crm:P16 lod:Tiara,
         lod:WeddingDress ;
     schema:location <http://vocab.getty.edu/tgn/7011781> .
@@ -189,7 +194,8 @@ schema:NewsArticle rdfs:subClassOf schema:Text .
 
 schema:TVSeries rdfs:subClassOf dcmitype:MovingImage .
 
-dbr:The_New_York_Times schema:location <http://vocab.getty.edu/page/tgn/7007567> .
+dbr:The_New_York_Times foaf:name "The New York Times" ;
+    schema:location <http://vocab.getty.edu/page/tgn/7007567> .
 
 dcmitype:MovingImage rdfs:subClassOf schema:Image .
 
@@ -219,10 +225,11 @@ lod:Divorce a schema:Event ;
     crm:P14 lod:Charles,
         lod:LadyDiana .
 
-lod:LadyDFuneral a schema:Event ;
-    schema:location <http://vocab.getty.edu/page/tgn/1100068> .
+lod:SpencerFamily owl:sameAs dbr:Spencer_family .
 
 schema:Image rdfs:subClassOf schema:CreativeWork .
+
+schema:Photograph rdfs:subClassOf dcmitype:StillImage .
 
 schema:Text rdfs:subClassOf schema:CreativeWork .
 
@@ -248,11 +255,11 @@ lod:WeddingDress a <http://vocab.getty.edu/aat/300255177> ;
     schema:location "Spencer Family Collection" ;
     schema:material "Ivory silk taffeta, antique lace, pearls, sequins" .
 
-lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
-    schema:memberOf lod:RoyalFamily ;
+lod:RoyalFamily owl:sameAs dbr:British_royal_family ;
     schema:owns lod:KensingtonPalace .
 
-lod:RoyalFamily owl:sameAs dbr:British_royal_family ;
+lod:Charles owl:sameAs <http://viaf.org/viaf/84034215> ;
+    schema:memberOf lod:RoyalFamily ;
     schema:owns lod:KensingtonPalace .
 
 lod:KensingtonPalace a <http://vocab.getty.edu/page/aat/300005743> ;
