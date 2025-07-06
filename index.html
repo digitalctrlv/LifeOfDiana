@@ -229,184 +229,483 @@
 
 
     
-<!-- Knowledge organisation --> 
- <section id="know-org">
-    <div class="container lg-4 my-5">
-        <div class="row justify-content-center">
-            <h4 class="section-title2">Knowledge Organization</h4>
-            <div class="col-lg-8">
-                <div id="metadata-analysis">
-                    <h3 class="h3">Metadata Analysis</h3>
-                        <p>We identified the metadata of our chosen items from the institutions holding them and the different metadata standards in which the institution decided to encode the objects. The table bellow explains the item, its type, the provider institution and the metadata standard. In the metadata standards column those marked with * represent those where the provider did not explicitly provide the used standard, therefore applied the prevalent standard of the item.</p>
-                        <div style="overflow-x:auto;">   
-                            <table style="width: 100%">
-                                <tr>
-                                    <th>Item</th>
-                                    <th>Object Type</th>
-                                    <th>Provider</th>
-                                    <th>Metadata Standard</th>
-                                </tr>
-                                <tr>
-                                    <td>Engagement interview</td>
-                                    <td>Video</td>
-                                    <td>ITN</td>
-                                    <td>Open Graph / Schema.org</td>
-                                </tr>
-                                <tr>
-                                    <td>Kensington Palace</td>
-                                    <td>Building</td>
-                                    <td>Historic England</td>
-                                    <td>Custom</td>
-                                </tr>
-                                <tr>
-                                    <td>Lady Diana Spencer's Wedding Dress</td>
-                                    <td>Wedding Dress </td>
-                                    <td>Historic Royal Palaces </td>
-                                    <td>Dublin Core/ CDWA CCO *</td>
-                                </tr>
-                                <tr>
-                                    <td>Spencer Tiara</td>
-                                    <td>Jewelry Tiara </td>
-                                    <td>Wikipedia</td>
-                                    <td>Dublin Core* </td>
-                                </tr>
-                                <tr>
-                                    <td>"Diana, her True Story - In her own words"</td>
-                                    <td>Book</td>
-                                    <td>OPAC SBN</td>
-                                    <td>MARC21</td>
-                                </tr>
-                                <tr>
-                                    <td>Photograph of Diana Shaking hands with AIDS patients </td>
-                                    <td>Photo</td>
-                                    <td>Getty Images</td>
-                                    <td>IPTC/XMP*</td>
-                                </tr>
-                                <tr>
-                                    <td>Photograph of Lady Diana on holiday in Portofino</td>
-                                    <td>Photo</td>
-                                    <td>Getty Images</td>
-                                    <td>IPTC/XMP*</td>
-                                </tr>
-                                <tr>
-                                    <td>The Crown</td>
-                                    <td>TV Series</td>
-                                    <td>IMDB</td>
-                                    <td>Schema.org</td>
-                                </tr>
-                                <tr>
-                                    <td>Candle in the Wind</td>
-                                    <td>Song</td>
-                                    <td>MusicBrainz</td>
-                                    <td>MMD</td>
-                                </tr>
-                                <tr>
-                                    <td>Divorce announcement</td>
-                                    <td>News Article</td>
-                                    <td>New York Times</td>
-                                    <td>Schema.org</td>
-                                </tr>
-                                <tr>
-                                    <td>Alma Bridge</td>
-                                    <td>Building</td>
-                                    <td>Structurae.net</td>
-                                    <td>Schema.org*</td>
-                                </tr>
-                            </table>
+    <!-- Knowledge organisation --> 
+    <section id="know-org">
+        <div class="container lg-4 my-5">
+            <div class="row justify-content-center">
+                <h4 class="section-title2">Knowledge Organization</h4>
+                <div class="col-lg-8">
+                    <div id="metadata-analysis">
+                        <h3 class="h3">Metadata Analysis</h3>
+                            <p>We identified the metadata of our chosen items from the institutions holding them and the different metadata standards in which the institution decided to encode the objects. The table bellow explains the item, its type, the provider institution and the metadata standard. In the metadata standards column those marked with * represent those where the provider did not explicitly provide the used standard, therefore applied the prevalent standard of the item.</p>
+                            <br>
+                            <div style="overflow-x:auto;">   
+                                <table style="width: 100%">
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Object Type</th>
+                                        <th>Provider</th>
+                                        <th>Metadata Standard</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Engagement interview</td>
+                                        <td>Video</td>
+                                        <td>ITN</td>
+                                        <td>Open Graph / Schema.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kensington Palace</td>
+                                        <td>Building</td>
+                                        <td>Historic England</td>
+                                        <td>Custom</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lady Diana Spencer's Wedding Dress</td>
+                                        <td>Wedding Dress </td>
+                                        <td>Historic Royal Palaces </td>
+                                        <td>Dublin Core/ CDWA CCO *</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spencer Tiara</td>
+                                        <td>Jewelry Tiara </td>
+                                        <td>Wikipedia</td>
+                                        <td>Dublin Core* </td>
+                                    </tr>
+                                    <tr>
+                                        <td>"Diana, her True Story - In her own words"</td>
+                                        <td>Book</td>
+                                        <td>OPAC SBN</td>
+                                        <td>MARC21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Photograph of Diana Shaking hands with AIDS patients </td>
+                                        <td>Photo</td>
+                                        <td>Getty Images</td>
+                                        <td>IPTC/XMP*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Photograph of Lady Diana on holiday in Portofino</td>
+                                        <td>Photo</td>
+                                        <td>Getty Images</td>
+                                        <td>IPTC/XMP*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Crown</td>
+                                        <td>TV Series</td>
+                                        <td>IMDB</td>
+                                        <td>Schema.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candle in the Wind</td>
+                                        <td>Song</td>
+                                        <td>MusicBrainz</td>
+                                        <td>MMD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Divorce announcement</td>
+                                        <td>News Article</td>
+                                        <td>New York Times</td>
+                                        <td>Schema.org</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alma Bridge</td>
+                                        <td>Building</td>
+                                        <td>Structurae.net</td>
+                                        <td>Schema.org*</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    <div id="theoretical-model">
+                        <h3 class="h3">Theoretical model</h3>
+                            <p>After identifying the data descriptions of our chosen items from the institutions holding them, we described our items in natural language in a graphic model, reusing the descriptions from the institutions holding the items while adding relevant information and interlinking the relationships of the items themselves to create the narrative of our study domain with the purpose of enriching the data with a layer of interpretation. We created this theoretical model by answering the questions: Who, Where, When, What for each item.</p>
+                            <br>
+                        <img src="img/theoreticalModel.png" 
+                            alt="Theoretical Model Diagram" 
+                            class="zoomable-image img-fluid border"
+                            data-zoom-src="img/theoreticalModel.png">
+                        <div class="zoom-hint">
+                            <i>Click on the image to zoom in and explore the details</i>
                         </div>
                     </div>
-                <div id="theoretical-model">
-                    <h3 class="h3">Theoretical model</h3>
-                        <p>After identifying the data descriptions of our chosen items from the institutions holding them, we described our items in natural language in a graphic model, reusing the descriptions from the institutions holding the items while adding relevant information and interlinking the relationships of the items themselves to create the narrative of our study domain with the purpose of enriching the data with a layer of interpretation. We created this theoretical model by answering the questions: Who, Where, When, What for each item.</p>
+                    <div id="conceptual-model">
+                        <h3 class="h3">Conceptual model</h3>
+                            <p>We developed our conceptual model, the formal representation of the Theoretical Model. We took the subjects, concepts, and relationships of the Theoretical Model, which are now refactored in the Conceptual Model with classes and properties taken from selected schemas, vocabularies, and ontologies.</p>
+                            <br>
+                        <img src="img/conceptualModel.svg" 
+                            alt="Conceptual Model Diagram" 
+                            class="zoomable-image img-fluid border"
+                            data-zoom-src="img/conceptualModel.svg">
+                        <div class="zoom-hint">
+                            <i>Click on the image to zoom in and explore the details</i>
+                        </div>
                         <br>
-                    <img src="/img/theoreticalModel.png" 
-                        alt="Theoretical Model Diagram" 
-                        class="zoomable-image img-fluid border"
-                        data-zoom-src="img/theoreticalModel.png">
-                    <div class="zoom-hint">
-                        <i>Click on the image to zoom in and explore the details</i>
+                        <p>Both models are free to download using the button below. We used <a class="external-link" href="https://www.yworks.com/products/yed">yEd</a> to create these models and <a class="external-link" href="https://essepuntato.it/graffoo/">graffoo</a> to style the conceptual model.<br> <br> <input type="button" class="download-btn" data-file="assets/models.zip" value="Download Models"/></p>
                     </div>
                 </div>
-                <div id="conceptual-model">
-                    <h3 class="h3">Conceptual model</h3>
-                        <p>We developed our conceptual model, the formal representation of the Theoretical Model. We took the subjects, concepts, and relationships of the Theoretical Model, which are now refactored in the Conceptual Model with classes and properties taken from selected schemas, vocabularies, and ontologies.</p>
-                        <br>
-                    <img src="img/conceptualModel.svg" 
-                        alt="Conceptual Model Diagram" 
-                        class="zoomable-image img-fluid border"
-                        data-zoom-src="/img/conceptualModel.svg">
-                    <div class="zoom-hint">
-                        <i>Click on the image to zoom in and explore the details</i>
-                    </div>
-                    <br>
-                    <p>Both models are free to download using the button below. We used <a class="external-link" href="https://www.yworks.com/products/yed">yEd</a> to create these models and <a class="external-link" href="https://essepuntato.it/graffoo/">graffoo</a> to style the conceptual model.<br> <br> <input type="button" class="download-btn" data-file="assets/models.zip" value="Download Models"/></p>
-                </div>
-            </div>
-        </div> 
-    </div>
-</section>
-
-<!-- Knowledge representation -->       
-<section id="know-rep">
-    <div class="container lg-4 my-5">
-        <div class="row justify-content-center">
-            <h4 class="section-title2">Knowledge Representation</h4>
-            <div class="col-lg-8">
-                <br>
-                <div id="items-description">
-                    <h3 class="h3">Items Description</h3>
-                    <p>We produce a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are availble here: <br> <br> <input type="button" class="download-btn" data-file="assets/final_csv.zip" value="Download .zipfile CSV"/></p>
-                    <br>
-                </div>
-                <div id="text-conversion">
-                    <h3 class="h3">Text Conversion</h3>
-                    <p>For this study, we selected a representative sample from the book "Diana in Her Own Words: Her True Story" to encode using XML/TEI markup standards. This sample underwent subsequent transformations using Python scripts to convert XML to HTML and XML/TEI to RDF formats.</p>
-                    <br>
-                    <h4 class="h4">XML/TEI</h4>
-                    <p>We employed XML/TEI encoding methodology to represent the textual structure of a selected excerpt from the opening chapter, "In Her Own Words,". The XML/TEI encoded document sample is accessible here: <br> <br> <input type="button" class="download-btn" data-file="assets/SamplePage.xml" value="Download XML/TEI encoding"/></p>
-                    <br>
-                    <h4 class="h4">XML to HTML</h4>
-                    <p>The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br> <br> <input type="button" class="download-btn" data-file="assets/XML_to_HTML.xsl" value="Download XML/HTML transformation XSLT file"/></p>
-                    <br>
-                    <img src="img/diana-html-ss.png" 
-                        alt="XML to HTML conversion" 
-                        class="zoomable-image img-fluid border"
-                        data-zoom-src="/img/diana-html-ss.png">
-                    <div class="zoom-hint">
-                        <i>Click on the image to zoom in and explore the details</i>
-                    </div>
-                    <br>
-                    <h4 class="h4">XML/TEI to RDF</h4>
-                    <p>The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below:<br> <br> <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download XML to RDF transformation .zipfile"/></p>
-                </div>
-                <div id="rdf-creation">
-                    <h3 class="h3">RDF Creation</h3>
-                    <p>We produced an RDF dataset of all our items. Download the python code and rdf file here: <br> <br> <input type="button" class="download-btn" data-file="assets/rdfdataset.zip" value="Download .zipfile RDF"/></p>
-                    <br>
-                    <div id="rdf_serialised" class="row" style="padding-top: 20px; padding-bottom: 30px;">
-                    <script src="https://gist.github.com/KonTikiLOD/c91bbdcb343d4fc1f470cf993375fe3a.js"></script>
-                    </div>
-                    <p>We established URIs for our chosen entities and items, along with supplementary resources that could enhance the network of internal relationships:</p>
-                    <ul>
-                        <li>https://lifeofdiana.github.io/engagement-interview</li>
-                        <li>https://lifeofdiana.github.io/spencer-tiara</li>
-                        <li>https://lifeofdiana.github.io/wedding-dress</li>
-                        <li>https://lifeofdiana.github.io/kensington-palace</li>
-                        <li>https://lifeofdiana.github.io/aids-photo</li>
-                        <li>https://lifeofdiana.github.io/biography-of-diana</li>
-                        <li>https://lifeofdiana.github.io/divorce-announcement</li>
-                        <li>https://lifeofdiana.github.io/photo-portofino</li>
-                        <li>https://lifeofdiana.github.io/ponte-alma</li>
-                        <li>https://lifeofdiana.github.io/candle-in-the-wind</li>
-                        <li>https://lifeofdiana.github.io/the-crown</li>
-                    </ul>
-                    <p>This is text of another group -- In addition, so as to uniquely identify our entities, we tried to align them to external resources such as authority files and repositories of knowledge already present on the World Wide Web. In particular, we connected our data to <b>VIAF, Geonames, Getty AAT, Library of Congress Linked Data Service</b> and <b>Wikidata.</b></p>
-                    <p>To create such external connections we exploited some properties able to create semantic associations, namely: <b>owl:sameAs, skos:exactMatch, skos:broader, skos:related, foaf:isPrimaryTopicOf,</b> and <b>rdfs:seeAlso.</b></p>
-                </div>
-            </div>
+            </div> 
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Knowledge representation -->       
+    <section id="know-rep">
+        <div class="container lg-4 my-5">
+            <div class="row justify-content-center">
+                <h4 class="section-title2">Knowledge Representation</h4>
+                <div class="col-lg-8">
+                    <br>
+                    <div id="items-description">
+                        <h3 class="h3">Items Description</h3>
+                        <p>We produce a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are availble here: <br> <br> <input type="button" class="download-btn" data-file="assets/final_csv.zip" value="Download .zipfile CSV"/></p>
+                        <br>
+                    </div>
+                    <div id="text-conversion">
+                        <h3 class="h3">Text Conversion</h3>
+                        <p>For this study, we selected a representative sample from the book "Diana in Her Own Words: Her True Story" to encode using XML/TEI markup standards. This sample underwent subsequent transformations using Python scripts to convert XML to HTML and XML/TEI to RDF formats.</p>
+                        <br>
+                        <h4 class="h4">XML/TEI</h4>
+                        <p>We employed XML/TEI encoding methodology to represent the textual structure of a selected excerpt from the opening chapter, "In Her Own Words,". The XML/TEI encoded document sample is accessible here: <br> <br> <input type="button" class="download-btn" data-file="assets/SamplePage.xml" value="Download XML/TEI encoding"/></p>
+                        <br>
+                        <h4 class="h4">XML to HTML</h4>
+                        <p>The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br> <br> <input type="button" class="download-btn" data-file="assets/XML_to_HTML.xsl" value="Download XML/HTML transformation XSLT file"/></p>
+                        <br>
+                        <img src="img/diana-html-ss.png" 
+                            alt="XML to HTML conversion" 
+                            class="zoomable-image img-fluid border"
+                            data-zoom-src="img/diana-html-ss.png">
+                        <div class="zoom-hint">
+                            <i>Click on the image to zoom in and explore the details</i>
+                        </div>
+                        <br>
+                        <h4 class="h4">XML/TEI to RDF</h4>
+                        <p>The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below:<br> <br> <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download XML to RDF transformation .zipfile"/></p>
+                        <br>
+                    </div>
+                    <div id="rdf-creation">
+                        <h3 class="h3">RDF Creation</h3>
+                        <p>We produced an RDF dataset of all our items. Download the python code and rdf file here: <br> <br> <input type="button" class="download-btn" data-file="assets/rdfdataset.zip" value="Download .zipfile RDF"/></p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row justify-content-center">
+                            <pre id="code1" class="code-content"><code>
+                                @prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt; .
+                                @prefix dbr: &lt;<a href="http://dbpedia.org/resource/" target="_blank">http://dbpedia.org/resource/</a>&gt; .
+                                @prefix dc: &lt;<a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>&gt; .
+                                @prefix dcmitype: &lt;<a href="http://purl.org/dc/dcmitype/" target="_blank">http://purl.org/dc/dcmitype/</a>&gt; .
+                                @prefix dcterms: &lt;<a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>&gt; .
+                                @prefix foaf: &lt;<a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>&gt; .
+                                @prefix lod: &lt;<a href="https://github.com/digitalctrlv/LifeOfDiana/" target="_blank">https://github.com/digitalctrlv/LifeOfDiana/</a>&gt; .
+                                @prefix owl: &lt;<a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a>&gt; .
+                                @prefix rdfs: &lt;<a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>&gt; .
+                                @prefix schema: &lt;<a href="https://schema.org/" target="_blank">https://schema.org/</a>&gt; .
+                                @prefix wd: &lt;<a href="https://www.wikidata.org/wiki/" target="_blank">https://www.wikidata.org/wiki/</a>&gt; .
+                                @prefix xsd: &lt;<a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>&gt; .
+
+                                crm:E8 crm:P22 lod:RoyalFamily ;
+                                    crm:P23 dbr:Daniel_Finch ;
+                                    crm:P24 lod:NottinghamHouse .
+                                
+                                lod:DivorceAnnouncement a schema:NewsArticle ;
+                                    dc:language "en"^^xsd:language ;
+                                    dc:subject lod:Divorce ;
+                                    dc:title "It's Official: Charles and Diana Split, and She Pays Her Own Bills" ;
+                                    schema:articleSection "A" ;
+                                    schema:copyrightHolder dbr:The_New_York_Times ;
+                                    schema:creator dbr:Sarah_Lyall ;
+                                    schema:isPartOf "CXLV, 50534" ;
+                                    schema:locationCreated &lt;<a href="http://vocab.getty.edu/page/tgn/7007567" target="_blank">http://vocab.getty.edu/page/tgn/7007567</a>&gt; ;
+                                    schema:pagination 9 ;
+                                    schema:publishDate "1996-08-29"^^xsd:date ;
+                                    schema:publisher dbr:The_New_York_Times .
+                                
+                                lod:EngagementInterview a dcmitype:MovingImage ;
+                                    dc:language "en"^^xsd:language ;
+                                    dc:title "On This Day: Charles and Diana's Awkward Engagement Interview, 1981" ;
+                                    crm:P14 lod:Charles,
+                                        lod:LadyDiana ;
+                                    schema:copyrightHolder "ITN archive" ;
+                                    schema:creator dbr:BBC ;
+                                    schema:dateCreated "1981-02-24"^^xsd:date ;
+                                    schema:genre "Entertainment" ;
+                                    schema:identifier "I0__QzksN8w" ;
+                                    schema:locationCreated lod:BuckinghamPalace ;
+                                    schema:provider dbr:YouTube ;
+                                    schema:publisher &lt;<a href="http://www.youtube.com/@royalchannel" target="_blank">http://www.youtube.com/@royalchannel, The Royal Family Channel"</a>&gt; ;
+                                    schema:uploadDate "2022-02-24"^^xsd:date .
+                                
+                                lod:LadyDianaWithAIDSPatient a schema:Photograph ;
+                                    dc:subject "Princess Diana and Aids Patients " ;
+                                    dc:title "Princess Diana shaking hands with an AIDS patient" ;
+                                    foaf:depicts lod:LadyDiana ;
+                                    schema:copyrightHolder "WireImage" ;
+                                    schema:creator "Anwar Hussein" ;
+                                    schema:dateCreated "1987-08-09"^^xsd:date ;
+                                    schema:identifier 14653447 ;
+                                    schema:locationCreated dbr:Middlesex_Hospital ;
+                                    schema:provider &lt;<a href="http://viaf.org/viaf/151544970" target="_blank">http://viaf.org/viaf/151544970</a>&gt; ;
+                                    schema:uploadDate "2007-08-22"^^xsd:date .
+
+                                lod:TheCrown a schema:TVSeries ;
+                                    dc:language "en"^^xsd:language ;
+                                    dc:title "The Crown" ;
+                                    owl:sameAs &lt;<a href="https://viaf.org/en/viaf/3838148997596659870003" target="_blank">https://viaf.org/en/viaf/3838148997596659870003</a>&gt; ;
+                                    foaf:depicts lod:AlmaBridge,
+                                        lod:BuckinghamPalace,
+                                        lod:Charles,
+                                        lod:DianaHerTrueStory,
+                                        lod:KensingtonPalace,
+                                        lod:LadyDFuneral,
+                                        lod:LadyDiana,
+                                        lod:LadyDianaOnHolidayInPortofino,
+                                        lod:NottinghamHouse,
+                                        lod:RoyalFamily,
+                                        lod:RoyalWedding,
+                                        lod:Tiara,
+                                        lod:WeddingDress ;
+                                    schema:actor lod:ElizabethDebicki,
+                                        lod:EmmaLouiseCorrin ;
+                                    schema:creator lod:PeterMorgan ;
+                                    schema:genre "Biographical, Drama, Historical" ;
+                                    schema:locationCreated "Ardverikie Estate, Kinloch Laggan, Newtonmore, Highland, Scotland, UK 
+                                    (Balmoral Castle in Scotland)" ;
+                                    schema:producer lod:LeftBankPictures,
+                                        lod:SonyPictureTelevision,
+                                        "Sony Pictures Television Production UK" ;
+                                    schema:provider &lt;<a href="https://viaf.org/en/viaf/110144647635343459670" target="_blank">https://viaf.org/en/viaf/110144647635343459670</a>&gt; ;
+                                    schema:uploadDate "2016-11-05"^^xsd:date .
+                                
+                                dbr:Christopher_Wren foaf:name "Chrisopher Wren" .
+                            
+                                dbr:Sarah_Lyall foaf:name "Sarah Lyall" .
+                                
+                                dcmitype:StillImage rdfs:subClassOf schema:Image .
+
+                                &lt;<a href="http://vocab.getty.edu/aat/300007838" target="_blank">http://vocab.getty.edu/aat/300007838</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; .
+                                
+                                &lt;<a href="http://vocab.getty.edu/aat/300046046" target="_blank">http://vocab.getty.edu/aat/300046046</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; .
+                                
+                                &lt;<a href="http://vocab.getty.edu/aat/300255177" target="_blank">http://vocab.getty.edu/aat/300255177</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; .
+                                
+                                &lt;<a href="http://vocab.getty.edu/page/aat/300005743" target="_blank">http://vocab.getty.edu/page/aat/300005743</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; .
+
+                                lod:AndrewMorton owl:sameAs &lt;<a href="http://viaf.org/viaf/22238479" target="_blank">http://viaf.org/viaf/22238479</a>&gt; ;
+                                    foaf:name "Andrew Morton" .
+                                
+                                lod:Archiginnasio owl:sameAs dbr:Archiginnasio_of_Bologna ;
+                                schema:location &lt;<a href="http://viaf.org/viaf/5185150647115410860003" target="_blank">http://viaf.org/viaf/5185150647115410860003</a>&gt; .
+
+                                lod:CandleInTheWind a schema:MusicComposition ;
+                                    dc:language "en"^^xsd:language ;
+                                    dc:title "Candle in the Wind ’97 (live, 1997-09-06: Westminster Abbey, London, England, UK)" ;
+                                    owl:sameAs wd:Q2449307 ;
+                                    schema:about lod:LadyDiana ;
+                                    schema:contributor lod:BernieTaupin ;
+                                    schema:creator lod:EltonJohn ;
+                                    schema:dateCreated "1997-09-06"^^xsd:date ;
+                                    schema:duration "4:03" ;
+                                    schema:genre dbr:Ballad,
+                                        dbr:Classic_rock,
+                                        dbr:Pop,
+                                        dbr:Rock_music,
+                                        "Singer-songwriter" ;
+                                    schema:identifier "T-011.520.443-7, T-070.028.244-5" ;
+                                    schema:isBasedOn "Candle in the Wind" ;
+                                    schema:locationCreated &lt;<a href="http://vocab.getty.edu/page/tgn/1100068" target="_blank">http://vocab.getty.edu/page/tgn/1100068</a>&gt; ;
+                                    schema:lyricist lod:BernieTaupin ;
+                                    schema:publisher lod:songPublisher .
+                                
+                                lod:DianaHerTrueStory a schema:Book ;
+                                    dc:language "en"^^xsd:language ;
+                                    dc:subject lod:Charles,
+                                        lod:Divorce,
+                                        lod:LadyDiana,
+                                        lod:RoyalFamily ;
+                                    dc:title "Diana: Her True Story - In her Own Words" ;
+                                    schema:creator lod:AndrewMorton ;
+                                    schema:datePublished "1997"^^xsd:gYear ;
+                                    schema:genre "Biography" ;
+                                    schema:identifier "97818547927091854792709" ;
+                                    schema:mentions lod:Apartments,
+                                        lod:KensingtonPalace ;
+                                    schema:publisher "Michael O'Mara Books" ;
+                                    schema:sourceOrganization lod:Archiginnasio .
+                                
+                                lod:ElizabethDebicki owl:sameAs &lt;<a href="http://viaf.org/viaf/305280245" target="_blank">http://viaf.org/viaf/305280245</a>&gt; ;
+                                    foaf:name "Elizabeth Debicki" ;
+                                    schema:roleName lod:LadyDiana .
+                                                    
+                                lod:EltonJohn owl:sameAs &lt;<a href="http://viaf.org/viaf/84034533" target="_blank">http://viaf.org/viaf/84034533</a>&gt; ;
+                                    foaf:name "Elton John" .
+                                
+                                lod:EmmaLouiseCorrin owl:sameAs &lt;<a href="http://viaf.org/viaf/1883161881819434100005" target="_blank">http://viaf.org/viaf/1883161881819434100005</a>&gt; ;
+                                    foaf:name "Emma-Louise Corrin" ;
+                                    schema:roleName lod:LadyDiana .
+                                    
+                                lod:LadyDFuneral a schema:Event ;
+                                    schema:location &lt;<a href="http://vocab.getty.edu/page/tgn/1100068" target="_blank">http://vocab.getty.edu/page/tgn/1100068</a>&gt; ;
+                                    schema:workPerformed lod:CandleInTheWind .
+                                
+                                lod:LadyDianaOnHolidayInPortofino a schema:Photograph ;
+                                    dc:subject "Lady Diana, Princess of Wales, sitting on the diving board of Mohammed Al Fayed's private yacht 
+                                    'Jonikal' as a seagull flies overhead" ;
+                                    dc:title "Lady Diana on holiday in Portofino" ;
+                                    foaf:depicts lod:LadyDiana ;
+                                    schema:copyrightHolder "Sygma Premium" ;
+                                    schema:creator "Stephane Cardinale - Corbis" ;
+                                    schema:dateCreated "1997-08-24"^^xsd:date ;
+                                    schema:identifier "news-31717-003.jpg" ;
+                                    schema:locationCreated wd:Q232782 ;
+                                    schema:provider &lt;<a href="http://viaf.org/viaf/151544970" target="_blank">http://viaf.org/viaf/151544970</a>&gt; ;
+                                    schema:uploadDate "2016-08-24"^^xsd:date .
+        
+                                lod:LeftBankPictures owl:sameAs &lt;<a href="http://viaf.org/viaf/130591214" target="_blank">http://viaf.org/viaf/130591214</a>&gt; ;
+                                    foaf:name "Left Bank Pictures" .
+                                        
+                                lod:PeterMorgan owl:sameAs wd:Q948122 ;
+                                    foaf:name "Peter Morgan" .
+        
+                                lod:RoyalWedding a schema:Event ;
+                                    dc:date "1981-07-29"^^xsd:date ;
+                                    crm:P14 lod:Charles,
+                                        lod:LadyDiana ;
+                                    crm:P16 lod:Tiara,
+                                        lod:WeddingDress ;
+                                    schema:location &lt;<a href="http://vocab.getty.edu/tgn/7011781" target="_blank">http://vocab.getty.edu/tgn/7011781</a>&gt; .
+                                                            
+                                lod:SonyPictureTelevision owl:sameAs wd:Q652390 ;
+                                    foaf:name "Sony Pictures Television" .
+                                    
+                                lod:songPublisher owl:sameAs wd:Q57818158 ;
+                                    foaf:name "Universal–Songs of PolyGram International, Inc." .
+                        
+                                schema:Book rdfs:subClassOf schema:Text .
+
+                                schema:MusicComposition rdfs:subClassOf schema:CreativeWork .
+                                
+                                schema:NewsArticle rdfs:subClassOf schema:Text .
+                                
+                                schema:TVSeries rdfs:subClassOf dcmitype:MovingImage .
+                                
+                                dbr:The_New_York_Times foaf:name "The New York Times" ;
+                                    schema:location &lt;<a href="http://vocab.getty.edu/page/tgn/7007567" target="_blank">http://vocab.getty.edu/page/tgn/7007567</a>&gt; .
+                                
+                                dcmitype:MovingImage rdfs:subClassOf schema:Image .
+                                
+                                &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; rdfs:subClassOf schema:CreativeWork .
+                                
+                                &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; rdfs:subClassOf schema:CreativeWork .
+
+                                lod:AlmaBridge a &lt;<a href="http://vocab.getty.edu/aat/300007838" target="_blank">http://vocab.getty.edu/aat/300007838</a>&gt; ;
+                                    dc:title "Alma Bridge" ;
+                                    schema:copyrightHolder "Minister of Equipment, Transport, Housing, Tourism, and the Sea" ;
+                                    schema:creator "Auguste Arsac, M. Dougnac","J. F. Coste, Ch. Blanc" ;
+                                    schema:endDate "1974"^^xsd:gYear ;
+                                    schema:geoCrosses &lt;<a href="http://viaf.org/viaf/316432461" target="_blank">http://viaf.org/viaf/316432461</a>&gt; ;
+                                    schema:location wd:Q90 ;
+                                    schema:material "Steel bridge" ;
+                                    schema:startDate "1970"^^xsd:gYear .
+                                
+                                lod:Apartments schema:isPartOf lod:KensingtonPalace .
+
+                                lod:BernieTaupin owl:sameAs dbr:Bernie_Taupin ;
+                                    foaf:name "Bernie Taupin" .
+
+                                lod:BuckinghamPalace owl:sameAs &lt;<a href="https://viaf.org/en/viaf/135411769" target="_blank">https://viaf.org/en/viaf/135411769</a>&gt; .
+
+                                lod:Divorce a schema:Event ;
+                                    crm:P14 lod:Charles,
+                                        lod:LadyDiana .
+                                
+                                lod:SpencerFamily owl:sameAs dbr:Spencer_family .
+
+                                schema:Image rdfs:subClassOf schema:CreativeWork .
+
+                                schema:Photograph rdfs:subClassOf dcmitype:StillImage .
+
+                                schema:Text rdfs:subClassOf schema:CreativeWork .
+
+                                lod:NottinghamHouse schema:creationDate "1605"^^xsd:gYear ;
+                                    schema:creator "Sir George Coppin" .
+                                
+                                    lod:Tiara a &lt;<a href="http://vocab.getty.edu/aat/300046046" target="_blank">http://vocab.getty.edu/aat/300046046</a>&gt; ;
+                                    dc:relation lod:WeddingDress ;
+                                    dc:title "Spencer Tiara" ;
+                                    schema:copyrightHolder lod:SpencerFamily ;
+                                    schema:creator "Garrard &amp; Co" ;
+                                    schema:dateCreated "1937"^^xsd:gYear ;
+                                    schema:location "Spencer Family Collection" ;
+                                    schema:material "Silver, gold, diamonds" .
+                                                        
+                                lod:WeddingDress a &lt;<a href="http://vocab.getty.edu/aat/300255177" target="_blank">http://vocab.getty.edu/aat/300255177</a>&gt; ;
+                                    dc:relation lod:Tiara ;
+                                    dc:title "Lady Diana Spencer's Wedding Dress" ;
+                                    schema:color "Ivory" ;
+                                    schema:copyrightHolder lod:SpencerFamily,
+                                        "David Emanuel, Elizabeth Emanuel" ;
+                                    schema:creator "David Emanuel, Elizabeth Emanuel" ;
+                                    schema:location "Spencer Family Collection" ;
+                                    schema:material "Ivory silk taffeta, antique lace, pearls, sequins" .
+                                
+                                lod:RoyalFamily owl:sameAs dbr:British_royal_family ;
+                                    schema:owns lod:KensingtonPalace .
+                                                        
+                                lod:Charles owl:sameAs &lt;<a href="http://viaf.org/viaf/84034215" target="_blank">http://viaf.org/viaf/84034215</a>&gt; ;
+                                    schema:memberOf lod:RoyalFamily ;
+                                    schema:owns lod:KensingtonPalace .
+                                                        
+                                lod:KensingtonPalace owl:sameAs &lt;<a href="http://vocab.getty.edu/page/aat/300005743" target="_blank">http://vocab.getty.edu/page/aat/300005743</a>&gt; ;
+                                    dc:title "Kensington Palace" ;
+                                    dcterms:replaces lod:NottinghamHouse ;
+                                    owl:sameAs &lt;<a href="https://viaf.org/en/viaf/172644537" target="_blank">https://viaf.org/en/viaf/172644537</a>&gt; ;
+                                    schema:address "KENSINGTON PALACE, KENSINGTON PALACE W8" ;
+                                    schema:creator dbr:Christopher_Wren ;
+                                    schema:genre &lt;<a href="http://vocab.getty.edu/page/aat/300107014" target="_blank">http://vocab.getty.edu/page/aat/300107014</a>&gt; ;
+                                    schema:identifier 1223861 ;
+                                    schema:material "Stone" ;
+                                    schema:publishDate "1969-04-15" ;
+                                    schema:sourceOrganization dbr:Historic_England .
+                                
+                                lod:LadyDiana owl:sameAs &lt;<a href="http://viaf.org/viaf/107032638" target="_blank">http://viaf.org/viaf/107032638</a>&gt; ;
+                                    schema:deathPlace lod:AlmaBridge ;
+                                    schema:homeLocation lod:Apartments .
+
+                            </code></pre>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row justify-content-center">
+                        <h4 class="h4">URI entities</h4>
+                        <p>We established URIs for our chosen entities and items, along with supplementary resources that could enhance the network of internal relationships:</p>
+                        <ul>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/engagement-interview</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/spencer-tiara</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/wedding-dress</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/kensington-palace</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/aids-photo</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/biography-of-diana</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/divorce-announcement</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/photo-portofino</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/ponte-alma</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/candle-in-the-wind</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/the-crown</li>
+                        </ul>
+                        <p>This is text of another group -- In addition, so as to uniquely identify our entities, we tried to align them to external resources such as authority files and repositories of knowledge already present on the World Wide Web. In particular, we connected our data to <b>VIAF, Geonames, Getty AAT, Library of Congress Linked Data Service</b> and <b>Wikidata.</b></p>
+                        <p>To create such external connections we exploited some properties able to create semantic associations, namely: <b>owl:sameAs, skos:exactMatch, skos:broader, skos:related, foaf:isPrimaryTopicOf,</b> and <b>rdfs:seeAlso.</b></p>
+                        <br>
+                        <h3 id="rdf-visualization" class="h3">RDF Visualization</h3>
+                        <img src="img/rdfgraph.svg" 
+                            alt="RDF visualization" 
+                            class="zoomable-image img-fluid border"
+                            data-zoom-src="img/rdfgraph.svg">
+                        <div class="zoom-hint">
+                            <i>Click on the image to zoom in and explore the details</i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
