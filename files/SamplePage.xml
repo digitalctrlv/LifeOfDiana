@@ -77,7 +77,7 @@
             <sourceDesc>
                 <bibl>
                     <author>Andrew Morton</author>
-                    <title type="chapter">Diana, Princess of <placeName key="#wales">Wales</placeName> - In Her Own Words</title>. In 
+                    <title type="chapter">Diana, Princess of <placeName ref="#wales">Wales</placeName> - In Her Own Words</title>. In 
                     <title type="main" lang="en" xml:id="BT">Diana: Her True Story</title>
                     <date when="2017">2017</date>
                     <publisher xml:id="publisher">Michael O'Mara Book</publisher>
