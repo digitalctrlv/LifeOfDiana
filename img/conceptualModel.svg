@@ -289,7 +289,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-5432.499" cy="926.8737" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-5416.499" xml:space="preserve" y="932.9205" clip-path="url(#clipPath2)" stroke="none">:"Candle in the Wind"</text>
+      <text x="-5416.499" xml:space="preserve" y="932.9205" clip-path="url(#clipPath2)" stroke="none">wd:Q2449307</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-5432.499" cy="926.8737"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
@@ -303,22 +303,22 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-3453.6429" cy="756.9251" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3487.6382" xml:space="preserve" y="737.5501" clip-path="url(#clipPath2)" stroke="none">dbr:Diana_Princess_Of_Wales</text>
+      <text x="-3484.9312" xml:space="preserve" y="737.5501" clip-path="url(#clipPath2)" stroke="none">viaf:Diana, Princess of Wales</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-3453.6429" cy="756.9251"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-4091.1906" cy="-31.8861" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-4163.937" xml:space="preserve" y="-51.2611" clip-path="url(#clipPath2)" stroke="none">dbr:Charles_III</text>
+      <text x="-4246.7339" xml:space="preserve" y="-51.2611" clip-path="url(#clipPath2)" stroke="none">viaf:Charles III, King of Great Britain</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-4091.1906" cy="-31.8861"/>
     </g>
     <g fill="rgb(204,255,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(204,255,204)">
-      <path d="M-5827.3521 579.9147 L-5713.8667 579.9147 L-5726.4761 622.9147 L-5839.9614 622.9147 Z" fill-rule="evenodd" clip-path="url(#clipPath2)" stroke="none"/>
+      <path d="M-5827.3521 607.4827 L-5713.8667 607.4827 L-5726.4761 650.4827 L-5839.9614 650.4827 Z" fill-rule="evenodd" clip-path="url(#clipPath2)" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-5826.3398" xml:space="preserve" y="607.4616" clip-path="url(#clipPath2)" stroke="none">xsd:duration</text>
-      <path fill="none" d="M-5827.3521 579.9147 L-5713.8667 579.9147 L-5726.4761 622.9147 L-5839.9614 622.9147 Z" fill-rule="evenodd" clip-path="url(#clipPath2)"/>
+      <text x="-5826.3398" xml:space="preserve" y="635.0295" clip-path="url(#clipPath2)" stroke="none">xsd:duration</text>
+      <path fill="none" d="M-5827.3521 607.4827 L-5713.8667 607.4827 L-5726.4761 650.4827 L-5839.9614 650.4827 Z" fill-rule="evenodd" clip-path="url(#clipPath2)"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-5730.5915" cy="1730.3766" stroke="none"/>
@@ -359,7 +359,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-3059.4471" cy="461.6515" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3174.3455" xml:space="preserve" y="446.2766" clip-path="url(#clipPath2)" stroke="none">:Alma Bridge</text>
+      <text x="-3224.4939" xml:space="preserve" y="446.2766" clip-path="url(#clipPath2)" stroke="none">dbr:Pont_de_l'Alma</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-3059.4471" cy="461.6515"/>
     </g>
     <g fill="rgb(204,255,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(204,255,204)">
@@ -380,35 +380,35 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-3518.4358" cy="2245.7052" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3709.842" xml:space="preserve" y="2277.1741" clip-path="url(#clipPath2)" stroke="none">Photograph of Lady Diana on holiday in Portofino</text>
+      <text x="-3712.3733" xml:space="preserve" y="2277.1741" clip-path="url(#clipPath2)" stroke="none">:Photograph of Lady Diana on holiday in Portofino</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-3518.4358" cy="2245.7052"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-3240.0456" cy="2057.0774" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3224.0457" xml:space="preserve" y="2063.1243" clip-path="url(#clipPath2)" stroke="none">Photograph Diana shakes hand with AIDS patiens</text>
+      <text x="-3224.0457" xml:space="preserve" y="2063.1243" clip-path="url(#clipPath2)" stroke="none">:Photograph Diana shakes hand with AIDS patiens</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-3240.0456" cy="2057.0774"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-3901.0056" cy="2449.584" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3885.0056" xml:space="preserve" y="2455.6309" clip-path="url(#clipPath2)" stroke="none">Engagement interview</text>
+      <text x="-3885.0056" xml:space="preserve" y="2455.6309" clip-path="url(#clipPath2)" stroke="none">:Engagement interview</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-3901.0056" cy="2449.584"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-2415.8526" cy="1128.8939" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-2399.8525" xml:space="preserve" y="1134.9408" clip-path="url(#clipPath2)" stroke="none">:Kensington palace</text>
+      <text x="-2399.8525" xml:space="preserve" y="1134.9408" clip-path="url(#clipPath2)" stroke="none">dbr:Kensington_Palace</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-2415.8526" cy="1128.8939"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-2928.6586" cy="1316.9974" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3001.4084" xml:space="preserve" y="1348.4662" clip-path="url(#clipPath2)" stroke="none">Nottingham House</text>
+      <text x="-2990.4592" xml:space="preserve" y="1348.4662" clip-path="url(#clipPath2)" stroke="none">dbr:Nottingham</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-2928.6586" cy="1316.9974"/>
     </g>
     <g fill="yellow" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="yellow">
@@ -443,7 +443,7 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-4589.6442" cy="2076.472" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-4694.4331" xml:space="preserve" y="2103.9407" clip-path="url(#clipPath2)" stroke="none">:The Crown</text>
+      <text x="-4722.0581" xml:space="preserve" y="2103.9407" clip-path="url(#clipPath2)" stroke="none">viaf:The Crown</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-4589.6442" cy="2076.472"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
@@ -471,14 +471,14 @@
       <circle r="10" clip-path="url(#clipPath2)" cx="-4749.8517" cy="1396.607" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-4804.9883" xml:space="preserve" y="1377.2321" clip-path="url(#clipPath2)" stroke="none">Spencer Tiara </text>
+      <text x="-4807.5195" xml:space="preserve" y="1377.2321" clip-path="url(#clipPath2)" stroke="none">:Spencer Tiara </text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-4749.8517" cy="1396.607"/>
     </g>
     <g fill="rgb(255,153,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(255,153,204)">
       <circle r="10" clip-path="url(#clipPath2)" cx="-3050.9208" cy="1404.7513" stroke="none"/>
     </g>
     <g font-size="16px" stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
-      <text x="-3034.9209" xml:space="preserve" y="1410.7981" clip-path="url(#clipPath2)" stroke="none">:Buckingham Palace</text>
+      <text x="-3034.9209" xml:space="preserve" y="1410.7981" clip-path="url(#clipPath2)" stroke="none">dbr:Buckingham_Palace</text>
       <circle fill="none" stroke-width="3" r="10" clip-path="url(#clipPath2)" cx="-3050.9208" cy="1404.7513"/>
     </g>
     <g fill="rgb(204,255,204)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke="rgb(204,255,204)">
@@ -975,17 +975,17 @@
       <text x="-4121.6357" xml:space="preserve" y="33.8948" clip-path="url(#clipPath2)" stroke="none">rdf:type</text>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" fill="green" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="green" stroke-miterlimit="1.45">
-      <path fill="none" d="M-5533.4429 720.9803 L-5719.6895 629.517" clip-path="url(#clipPath2)"/>
+      <path fill="none" d="M-5546.3652 721.2282 L-5712.2285 654.8641" clip-path="url(#clipPath2)"/>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" fill-opacity="0" fill="rgb(0,0,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(0,0,0)" stroke-opacity="0" stroke-miterlimit="1.45">
-      <path d="M-5526.2622 724.5068 C-5527.2358 726.4897 -5529.6328 727.3078 -5531.6157 726.334 C-5533.5986 725.3602 -5534.417 722.9633 -5533.4429 720.9803 C-5532.4692 718.9974 -5530.0723 718.1794 -5528.0894 719.1532 C-5526.1064 720.127 -5525.2881 722.5239 -5526.2622 724.5068 Z" stroke="none" clip-path="url(#clipPath2)"/>
+      <path d="M-5538.9375 724.2 C-5539.7583 726.2511 -5542.0864 727.2485 -5544.1372 726.4279 C-5546.1885 725.6072 -5547.1855 723.2792 -5546.3652 721.2282 C-5545.5444 719.1771 -5543.2163 718.1797 -5541.1655 719.0004 C-5539.1143 719.821 -5538.1172 722.149 -5538.9375 724.2 Z" stroke="none" clip-path="url(#clipPath2)"/>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,6147,218)" fill="green" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="green" stroke-miterlimit="1.45">
-      <path fill="none" d="M-5526.2622 724.5068 C-5527.2358 726.4897 -5529.6328 727.3078 -5531.6157 726.334 C-5533.5986 725.3602 -5534.417 722.9633 -5533.4429 720.9803 C-5532.4692 718.9974 -5530.0723 718.1794 -5528.0894 719.1532 C-5526.1064 720.127 -5525.2881 722.5239 -5526.2622 724.5068 Z" clip-path="url(#clipPath2)"/>
-      <path fill="white" d="M-5733.1533 622.905 L-5721.4365 635.3434 L-5716.147 624.5723 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <path fill="none" d="M-5733.1533 622.905 L-5721.4365 635.3434 L-5716.147 624.5723 Z" clip-path="url(#clipPath2)"/>
-      <rect x="-5698.3994" y="661.3996" clip-path="url(#clipPath2)" fill="white" width="133.7812" height="22.8438" stroke="none"/>
-      <text x="-5696.3994" font-size="16px" y="678.8684" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">schema:duration</text>
+      <path fill="none" d="M-5538.9375 724.2 C-5539.7583 726.2511 -5542.0864 727.2485 -5544.1372 726.4279 C-5546.1885 725.6072 -5547.1855 723.2792 -5546.3652 721.2282 C-5545.5444 719.1771 -5543.2163 718.1797 -5541.1655 719.0004 C-5539.1143 719.821 -5538.1172 722.149 -5538.9375 724.2 Z" clip-path="url(#clipPath2)"/>
+      <path fill="white" d="M-5726.1553 649.2919 L-5713.5293 660.8063 L-5709.0713 649.665 Z" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" d="M-5726.1553 649.2919 L-5713.5293 660.8063 L-5709.0713 649.665 Z" clip-path="url(#clipPath2)"/>
+      <rect x="-5701.9725" y="674.3097" clip-path="url(#clipPath2)" fill="white" width="133.7812" height="22.8438" stroke="none"/>
+      <text x="-5699.9727" font-size="16px" y="691.7784" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">schema:duration</text>
       <path fill="none" d="M-5730.5913 1720.3766 L-5730.5913 1624.2294" clip-path="url(#clipPath2)" stroke="black"/>
       <path fill="black" d="M-5730.5913 1616.2294 L-5735.5913 1628.2294 L-5730.5913 1625.2294 L-5725.5913 1628.2294 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="-5763.0368" y="1656.8937" clip-path="url(#clipPath2)" fill="white" width="64.8906" height="22.8438" stroke="none"/>
@@ -1110,10 +1110,10 @@
       <path fill="none" d="M-5636.585 1588.7545 L-2423.2378 1588.7545 L-2423.2378 1146.6443" clip-path="url(#clipPath2)" stroke="navy"/>
       <path fill="navy" d="M-5644.585 1588.7545 C-5644.585 1586.5454 -5642.7939 1584.7545 -5640.585 1584.7545 C-5638.376 1584.7545 -5636.585 1586.5454 -5636.585 1588.7545 C-5636.585 1590.9636 -5638.376 1592.7545 -5640.585 1592.7545 C-5642.7939 1592.7545 -5644.585 1590.9636 -5644.585 1588.7545 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="navy" d="M-2423.2378 1135.6443 L-2429.2378 1147.6443 L-2417.2378 1147.6443 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <rect x="-4099.606" y="1577.3326" clip-path="url(#clipPath2)" fill="white" width="144.5078" height="22.8438" stroke="none"/>
+      <rect x="-4097.5201" y="1577.3326" clip-path="url(#clipPath2)" fill="white" width="140.3359" height="22.8438" stroke="none"/>
     </g>
     <g stroke-linecap="butt" font-size="16px" transform="matrix(1,0,0,1,6147,218)" fill="navy" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke="navy" stroke-miterlimit="1.45">
-      <text x="-4097.606" xml:space="preserve" y="1594.8014" clip-path="url(#clipPath2)" stroke="none">wchema:mentions</text>
+      <text x="-4095.52" xml:space="preserve" y="1594.8014" clip-path="url(#clipPath2)" stroke="none">schema:mentions</text>
     </g>
     <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,6147,218)" stroke-linecap="butt">
       <path fill="none" d="M-2425.8525 1128.8939 L-2881.4678 1128.8939" clip-path="url(#clipPath2)"/>
