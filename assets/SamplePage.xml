@@ -56,7 +56,7 @@
             <titleStmt>
                 <title>Extract from Diana: Her True Story</title>
                 <author>
-                    <persName ref="AM">Andrew Morton</persName>
+                    <persName ref="#AM">Andrew Morton</persName>
                 </author>
                 <editor>
                     <persName>Alice Spadavecchia</persName>
@@ -67,7 +67,7 @@
                 <pubPlace>Bologna</pubPlace>
                 <date when="2025">2025</date>
                 <availability>
-                    <p>Open access</p>
+                    <p>Copyright ©Sebina NEXT</p>
                 </availability>
                 <respStmt>
                     <resp>Publication responsibility</resp>
@@ -81,7 +81,7 @@
                     <title type="main" lang="en" xml:id="BT">Diana: Her True Story</title>
                     <date when="2017">2017</date>
                     <publisher xml:id="publisher">Michael O'Mara Book</publisher>
-                    <pubPlace key="London" ref="https://dbpedia.org/page/London">London</pubPlace>
+                    <pubPlace xml:id="London" ref="https://dbpedia.org/page/London">London</pubPlace>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -95,8 +95,8 @@
             <div type="intro">
             <head type="main" rend="uppercase">DIANA, PRINCESS OF WALES</head>
             <head type="subtitle" rend="italic">In Her Own Words</head>
-            <p type="note" resp="#publisher">Publisher’s note: The following words are selected from those given by <persName ref="DS">Diana</persName>, Princess of Wales in 1991-2 to Andrew 
-                Morton for publication in <persName ref="DS">Diana</persName>, Her True Story. The words are
+            <p type="note" resp="#publisher">Publisher’s note: The following words are selected from those given by <persName ref="#DS">Diana</persName>, Princess of Wales in 1991-2 to Andrew 
+                Morton for publication in <persName ref="#DS">Diana</persName>, Her True Story. The words are
                 all <persName ref="#DS">Diana</persName>’s except for those in parentheses.</p>
             </div>
         </front>
