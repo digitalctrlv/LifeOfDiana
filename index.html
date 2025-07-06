@@ -51,6 +51,7 @@
                             <li><a class="dropdown-item" href="#know-rep">Knowledge Representation</a></li>
                             <li><a class="dropdown-item" href="#text-conversion">Text Conversion</a></li>
                             <li><a class="dropdown-item" href="#rdf-creation">RDF Creation</a></li>
+                            <li><a class="dropdown-item" href="#rdf-visualization">RDF Visualization</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -352,11 +353,48 @@
         <div class="container lg-4 my-5">
             <div class="row justify-content-center">
                 <h4 class="section-title2">Knowledge Representation</h4>
+                <div id="cards" class="row my-5 align-items-center align-items-start justify-content-center">
+                    <div class="col-8 col-lg-3 col-xl-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center py-4">
+                                <h3 class="h3">Item description</h4>
+                                <p class="card-text mx-5">We produced a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are available here: <br> <br> <input type="button" class="download-btn btn-outline-secondary btn-lg mt-3" data-file="assets/final_csv.zip" value="Download"/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-3 col-xl-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center py-4">
+                                <h3 class="h3">Text conversion</h3>
+                                <h4 class="h4">XML/TEI</h4>
+                                <p>We employed XML/TEI encoding methodology to represent the textual structure of a selected excerpt from the opening chapter, "In Her Own Words,". The XML/TEI encoded document sample is accessible here: <br> <br> <input type="button" class="download-btn" data-file="assets/SamplePage.xml" value="Download"/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-3 col-xl-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center py-4">
+                                <h3 class="h3">Text conversion</h3>
+                                <h4 class="h4">XML to HTML</h4>
+                                <p>The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br> <br> <input type="button" class="download-btn" data-file="assets/XML_to_HTML.xsl" value="Download"/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-3 col-xl-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center py-4">
+                                <h3 class="h3">Text conversion</h3>
+                                <h4 class="h4">XML/TEI to RDF</h4>
+                                <p>The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below:<br> <br> <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-8">
                     <br>
-                    <div id="items-description">
+                    <!-- <div id="items-description">
                         <h3 class="h3">Items Description</h3>
-                        <p>We produce a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are availble here: <br> <br> <input type="button" class="download-btn" data-file="assets/final_csv.zip" value="Download .zipfile CSV"/></p>
+                        <p>We produced a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are availble here: <br> <br> <input type="button" class="download-btn btn-outline-secondary btn-lg mt-3" data-file="assets/final_csv.zip" value="Download .zipfile CSV"/></p>
                         <br>
                     </div>
                     <div id="text-conversion">
@@ -368,7 +406,8 @@
                         <br>
                         <h4 class="h4">XML to HTML</h4>
                         <p>The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br> <br> <input type="button" class="download-btn" data-file="assets/XML_to_HTML.xsl" value="Download XML/HTML transformation XSLT file"/></p>
-                        <br>
+                        <br> -->
+                        <h3 class="h3">XML to HTML conversion (screenshot)</h3>
                         <img src="img/diana-html-ss.png" 
                             alt="XML to HTML conversion" 
                             class="zoomable-image img-fluid border"
@@ -377,9 +416,9 @@
                             <i>Click on the image to zoom in and explore the details</i>
                         </div>
                         <br>
-                        <h4 class="h4">XML/TEI to RDF</h4>
+                        <!-- <h4 class="h4">XML/TEI to RDF</h4>
                         <p>The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below:<br> <br> <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download XML to RDF transformation .zipfile"/></p>
-                        <br>
+                        <br> -->
                     </div>
                     <div id="rdf-creation">
                         <h3 class="h3">RDF Creation</h3>
@@ -678,17 +717,17 @@
                         <h4 class="h4">URI entities</h4>
                         <p>We established URIs for our chosen entities and items, along with supplementary resources that could enhance the network of internal relationships:</p>
                         <ul>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/engagement-interview</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/spencer-tiara</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/wedding-dress</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/kensington-palace</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/aids-photo</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/biography-of-diana</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/divorce-announcement</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/photo-portofino</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/ponte-alma</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/candle-in-the-wind</li>
-                            <li>https://github.com/digitalctrlv/LifeOfDiana/the-crown</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/EngagementInterview</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/Tiara</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/WeddingDress</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/KensingtonPalace</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/LadyDianaWithAIDSPatient</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/DianaHerTrueStory</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/DivorceAnnouncement</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/LadyDianaOnHolidayInPortofino</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/AlmaBridge</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/CandleInTheWind</li>
+                            <li>https://github.com/digitalctrlv/LifeOfDiana/TheCrown</li>
                         </ul>
                         <p>This is text of another group -- In addition, so as to uniquely identify our entities, we tried to align them to external resources such as authority files and repositories of knowledge already present on the World Wide Web. In particular, we connected our data to <b>VIAF, Geonames, Getty AAT, Library of Congress Linked Data Service</b> and <b>Wikidata.</b></p>
                         <p>To create such external connections we exploited some properties able to create semantic associations, namely: <b>owl:sameAs, skos:exactMatch, skos:broader, skos:related, foaf:isPrimaryTopicOf,</b> and <b>rdfs:seeAlso.</b></p>
@@ -778,10 +817,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/tiara.jpg" alt="Spencer Tiara">
+                    <img src="img/tiara.jpg" alt="Spencer Tiara">
                     <h4 class="modal-subtitle">Mediatype: Tiara</h4>
                     <p>Is a unique piece of jewelry of diamonds in silver settings mounted in gold in various floral shapes assembly by Garrard & Co as a tiara in 1937, own by the Spencer family. Used by Lady Diana during her wedding to Prince Charles, it was characteristic  because she decided to wear a tiara from her family and not a jewel of the crown.</p>
-                    <a href="https://www.royaljewelrycollection.org" target="_blank" class="external-link">
+                    <a href="https://en.wikipedia.org/wiki/Jewels_of_Diana,_Princess_of_Wales" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source 
                     </a> <hr>
                     <input type="button" class="download-btn" data-file="assets/Spencer Tiara.csv" value="Download CSV"/>
@@ -799,7 +838,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/weddingDress.jpg" alt="Lady Diana Spencer's Wedding Dress">
+                    <img src="img/weddingDress.jpg" alt="Lady Diana Spencer's Wedding Dress">
                     <h4 class="modal-subtitle">Mediatype: Wedding dress</h4>
                     <p>Is the dress worn by Lady Diana for her wedding to Prince Charles in 1981 at St’Paul Cathedral in London. Was an ivory silk taffeta and antique lace gown, with a 25-foot train and a 140 m tulle veil. Is considered today one of the most iconic wedding dresses in history, becoming inspiration for the 1980’s fashion.</p>
                     <a href="https://www.hrp.org.uk/kensington-palace/royal-lace-the-wedding-dress-of-diana-princess-of-wales/#gs.myw556" target="_blank" class="external-link">
@@ -820,7 +859,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/kensington.jpg" alt="Kensington Palace">
+                    <img src="img/kensington.jpg" alt="Kensington Palace">
                     <h4 class="modal-subtitle">Mediatype: Building</h4>
                     <p>Kensington Palace is an XVIII century palace of the royal family that work as residence for several royal family members. It became the official residence of Princess Diana since the day after the wedding until her death.</p>
                     <a href="https://historicengland.org.uk/listing/the-list/list-entry/1002038" target="_blank" class="external-link">
@@ -841,7 +880,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/Aidsphoto.jpg" alt="Photograph Diana shaes hands with AIDS patients">
+                    <img src="img/Aidsphoto.jpg" alt="Photograph Diana shaes hands with AIDS patients">
                     <h4 class="modal-subtitle">Mediatype: Photograph</h4>
                     <p>The photo taken on April 1987 portrays Princess Diana shaking hands with AIDS patient without wearing gloves, breaking the misconception that HI/AIDs was contagious from simple touch, creating awareness and reducing the stigma related to the disease.</p>
                     <a href="https://www.gettyimages.it/detail/fotografie-di-cronaca/diana-princess-of-wales-shakes-hands-with-a-aids-fotografie-di-cronaca/76214611?adppopup=true" target="_blank" class="external-link">
@@ -883,7 +922,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/divorceAnnouncement.jpeg" alt="Divorce announcement">
+                    <img src="img/divorceAnnouncement.jpeg" alt="Divorce announcement">
                     <h4 class="modal-subtitle">Mediatype: News Article</h4>
                     <p>"It's Official: Charles and Diana Split, and She Pays Her Own Bills" article published by New York Times in 1996. It stated the conclusion of the divorce process, with the specific settlement clauses between the Prince and Princess of Wales.</p>
                     <a href="https://www.nytimes.com/1996/08/29/world/it-s-official-charles-and-diana-split-and-she-pays-her-own-bills.html" target="_blank" class="external-link">
@@ -904,7 +943,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/photoPortofino.jpg" alt="Photo in portofino ">
+                    <img src="img/photoPortofino.jpg" alt="Photo in portofino ">
                     <h4 class="modal-subtitle">Mediatype: Photograph</h4>
                     <p>The photo was taken on August 1997 portrays Princess Diana on a yacht in Portofino, Italy. It's said that portraits her sense of solitude in her last days of her life.</p>
                     <a href="https://www.gettyimages.it/detail/fotografie-di-cronaca/lady-diana-princess-of-wales-sitting-on-the-fotografie-di-cronaca/542261058" target="_blank" class="external-link">
@@ -925,7 +964,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img//ponteAlma.jpg" alt="alma bridge">
+                    <img src="img//ponteAlma.jpg" alt="alma bridge">
                     <h4 class="modal-subtitle">Mediatype: Building</h4>
                     <p>Pont de l’Alma is a road bridge that goes across the Seine in Paris, France. Was build in 1856 and takes its name from the victory of France during the battle of Alma in the Crimean War. Now a days is known for being the site of the car crash where Princess Diana died in 1997.</p>
                     <a href="https://structurae.net/en/structures/alma-bridge-1974" target="_blank" class="external-link">
@@ -946,7 +985,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/candleInTheWind.jpg" alt="Candle in the wind song">
+                    <img src="img/candleInTheWind.jpg" alt="Candle in the wind song">
                     <h4 class="modal-subtitle">Mediatype: Musical Composition</h4>
                     <p>The song is a re-recorded version of the 1973 version of the song. It was performed by Elton John during the funeral service  of Princess Diana at Westminster Abbey on September 6, 1997. Elton John dedicated the song to her calling her “Goodbye England’s Rose”, later the song was released as a single dedicated to Princess Diana.</p>
                     <a href="https://musicbrainz.org/work/60be69e5-1338-4376-88e1-832ab03b3794" target="_blank" class="external-link">
@@ -967,7 +1006,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="/img/theCrown.jpg" alt="the Crown">
+                    <img src="img/theCrown.jpg" alt="the Crown">
                     <h4 class="modal-subtitle">Mediatype: TV Series</h4>
                     <p>Historical drama television series made by Netflix, that portrait the life of the British Royal family during the 20th century. During Season four, five and six they portrait Princess Diana since her engagement to Prince Charles until her death.</p>
                     <a href="https://www.imdb.com/es/title/tt4786824/" target="_blank" class="external-link">
