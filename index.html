@@ -354,83 +354,94 @@
     <!-- Knowledge representation -->       
     <section id="know-rep">
         <div class="container lg-4 my-5">
-            <div class="row justify-content-center">
-                <h4 class="section-title2">Knowledge Representation</h4>
-                <div id="cards" class="row my-5 align-items-center align-items-start justify-content-center">
-                    <div class="col-8 col-lg-3 col-xl-3">
-                        <div class="card h-100 border-0">
-                            <div class="card-body text-center py-4">
-                                <h3 class="h3">Item description</h4>
-                                <p class="card-text mx-5">We produced a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are available here: <br> <br> <input type="button" class="download-btn btn-outline-secondary btn-lg mt-3" data-file="assets/final_csv.zip" value="Download"/></p>
+          <div class="row justify-content-center">
+            <h4 class="section-title2">Knowledge Representation</h4>
+            <div id="cards" class="row my-3 justify-content-center">
+            
+                <!-- Card 1 -->
+                <div class="col-8 col-lg-3 col-xl-3 d-flex">
+                    <div class="card h-100 border-0 w-100">
+                        <div class="card-body d-flex flex-column align-items-center text-center py-4">
+                            <div class="card-heading mb-1" style="min-height: 2rem;">
+                                <h3 class="h3 mb-0">Item description</h3>
+                                <h4 class="h4 mb-0">Raw data</h4>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-8 col-lg-3 col-xl-3">
-                        <div class="card h-100 border-0">
-                            <div class="card-body text-center py-4">
-                                <h3 class="h3">Text conversion</h3>
-                                <h4 class="h4">XML/TEI</h4>
-                                <p>We employed XML/TEI encoding methodology to represent the textual structure of a selected excerpt from the opening chapter, "In Her Own Words,". The XML/TEI encoded document sample is accessible here: <br> <br> <input type="button" class="download-btn" data-file="assets/SamplePage.xml" value="Download"/></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-8 col-lg-3 col-xl-3">
-                        <div class="card h-100 border-0">
-                            <div class="card-body text-center py-4">
-                                <h3 class="h3">Text conversion</h3>
-                                <h4 class="h4">XML to HTML</h4>
-                                <p>The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br> <br> <input type="button" class="download-btn" data-file="assets/xmltohtml.zip" value="Download"/></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-8 col-lg-3 col-xl-3">
-                        <div class="card h-100 border-0">
-                            <div class="card-body text-center py-4">
-                                <h3 class="h3">Text conversion</h3>
-                                <h4 class="h4">XML/TEI to RDF</h4>
-                                <p>The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below:<br> <br> <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download"/></p>
-                            </div>
+                            <p class="card-text mx-3">
+                                We produced a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are available here: <br>
+                                <input type="button" class="download-btn btn-outline-secondary btn-lg mt-3" data-file="assets/final_csv.zip" value="Download" />
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+      
+                <!-- Card 2 -->
+                <div class="col-8 col-lg-3 col-xl-3 d-flex">
+                    <div class="card h-100 border-0 w-100">
+                        <div class="card-body d-flex flex-column align-items-center text-center py-4">
+                            <div class="card-heading mb-1" style="min-height: 2rem;">
+                                <h3 class="h3 mb-0">Text conversion</h3>
+                                <h4 class="h4 mb-0">XML/TEI</h4>
+                            </div>
+                            <p class="card-text mx-3">
+                                We employed XML/TEI encoding methodology to represent the textual structure of a selected excerpt from the opening chapter, "In Her Own Words,". The XML/TEI encoded document sample is accessible here: <br><br>
+                                <input type="button" class="download-btn" data-file="assets/SamplePage.xml" value="Download" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Card 3 -->
+                <div class="col-8 col-lg-3 col-xl-3 d-flex">
+                    <div class="card h-100 border-0 w-100">
+                        <div class="card-body d-flex flex-column align-items-center text-center py-4">
+                            <div class="card-heading mb-1" style="min-height: 2rem;">
+                                <h3 class="h3 mb-0">Text conversion</h3>
+                                <h4 class="h4 mb-0">XML to HTML</h4>
+                            </div>
+                            <p class="card-text mx-3">
+                                The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br><br>
+                                <input type="button" class="download-btn" data-file="assets/xmltohtml.zip" value="Download" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+      
+            <!-- Card 4 -->
+            <div class="col-8 col-lg-3 col-xl-3 d-flex">
+                <div class="card h-100 border-0 w-100">
+                    <div class="card-body d-flex flex-column align-items-center text-center py-4">
+                        <div class="card-heading mb-1" style="min-height: 2rem;">
+                            <h3 class="h3 mb-0">Text conversion</h3>
+                            <h4 class="h4 mb-0">XML/TEI to RDF</h4>
+                        </div>
+                        <p class="card-text mx-3">
+                            The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below: <br><br>
+                            <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 my-5">
+                <br>
+                    <h3 class="h3">XML to HTML conversion (screenshot)</h3>
+                    <img src="img/diana-html-ss.png" 
+                        alt="XML to HTML conversion" 
+                        class="zoomable-image img-fluid border"
+                        data-zoom-src="img/diana-html-ss.png">
+                    <div class="zoom-hint">
+                        <i>Click on the image to zoom in and explore the details</i>
+                    </div>
                     <br>
-                    <!-- <div id="items-description">
-                        <h3 class="h3">Items Description</h3>
-                        <p>We produced a table for each item (csv file) with the full description of the object by reusing the standard and creating relations and links to related items. The CSV files are availble here: <br> <br> <input type="button" class="download-btn btn-outline-secondary btn-lg mt-3" data-file="assets/final_csv.zip" value="Download .zipfile CSV"/></p>
-                        <br>
-                    </div>
-                    <div id="text-conversion">
-                        <h3 class="h3">Text Conversion</h3>
-                        <p>For this study, we selected a representative sample from the book "Diana in Her Own Words: Her True Story" to encode using XML/TEI markup standards. This sample underwent subsequent transformations using Python scripts to convert XML to HTML and XML/TEI to RDF formats.</p>
-                        <br>
-                        <h4 class="h4">XML/TEI</h4>
-                        <p>We employed XML/TEI encoding methodology to represent the textual structure of a selected excerpt from the opening chapter, "In Her Own Words,". The XML/TEI encoded document sample is accessible here: <br> <br> <input type="button" class="download-btn" data-file="assets/SamplePage.xml" value="Download XML/TEI encoding"/></p>
-                        <br>
-                        <h4 class="h4">XML to HTML</h4>
-                        <p>The XML document is henceforth transformed into a HTML document. The XSLT file is accessible through the download button and the visualization is shown here below. <br> <br> <input type="button" class="download-btn" data-file="assets/XML_to_HTML.xsl" value="Download XML/HTML transformation XSLT file"/></p>
-                        <br> -->
-                        <h3 class="h3">XML to HTML conversion (screenshot)</h3>
-                        <img src="img/diana-html-ss.png" 
-                            alt="XML to HTML conversion" 
-                            class="zoomable-image img-fluid border"
-                            data-zoom-src="img/diana-html-ss.png">
-                        <div class="zoom-hint">
-                            <i>Click on the image to zoom in and explore the details</i>
-                        </div>
-                        <br>
-                        <!-- <h4 class="h4">XML/TEI to RDF</h4>
-                        <p>The XML/TEI document is transformed into a RDF document. The RDFs are made available in both a .ttl and python file and downloadable as a .zipfile through the button here below:<br> <br> <input type="button" class="download-btn" data-file="assets/xmltordf.zip" value="Download XML to RDF transformation .zipfile"/></p>
-                        <br> -->
-                    </div>
-                    <div id="rdf-creation">
-                        <h3 class="h3">RDF Creation</h3>
-                        <p>We produced an RDF dataset of all our items. Download the python code and rdf file here: <br> <br> <input type="button" class="download-btn" data-file="assets/rdfdataset.zip" value="Download .zipfile RDF"/></p>
-                    </div>
                 </div>
+                <div id="rdf-creation">
+                    <h3 class="h3">RDF Creation</h3>
+                    <p>We produced an RDF dataset of all our items. Download the python code and rdf file here: <br> <br> <input type="button" class="download-btn" data-file="assets/rdfdataset.zip" value="Download .zipfile RDF"/></p>
+                </div>
+            </div>
                 <div class="col-lg-12">
                     <div class="row justify-content-center">
-                            <pre id="code1" class="code-content"><code>
+                    <div class="w-100 overflow-auto">
+                        <pre id="code1" class="p-3 bg-light rounded"><code>
                                 @prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt; .
                                 @prefix dbr: &lt;<a href="http://dbpedia.org/resource/" target="_blank">http://dbpedia.org/resource/</a>&gt; .
                                 @prefix dc: &lt;<a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>&gt; .
@@ -800,13 +811,16 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" color="white"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="player" class="align-center"></div>
+                    <div class="video-wrapper" id="player-container">
+                        <div id="player"></div>
+                    </div>
                     <h4 class="modal-subtitle">Mediatype: Video</h4>
-                    <p>In a BBC interview at Buckingham Palace on February 24 1981, it was the official announcement of the engagement of Prince Charles and Lady Diana Spencer. Remember as the "Awkward Engagement Interview” due to the answers given by the Prince. </p>
-                    <a href="https://www.youtube.com/watch?v=I0__QzksN8w" target="_blank" class="external-link">
+                    <p>In a BBC interview at Buckingham Palace on February 24 1981, it was the official announcement of the engagement of Prince Charles and Lady Diana Spencer...</p>
+                    <a id="ytvid" href="https://www.youtube.com/watch?v=I0__QzksN8w" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source
-                    </a> <hr>
-                    <input type="button" class="download-btn" data-file="assets/engagement_interview.csv" value="Download CSV"/>
+                    </a>
+                    <hr>
+                    <input type="button" class="download-btn" data-file="assets/engagement_interview.csv" value="Download CSV" />
                 </div>
             </div>
         </div>
