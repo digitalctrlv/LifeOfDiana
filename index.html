@@ -172,7 +172,7 @@
                     <div class="archive-card" data-bs-toggle="modal" data-bs-target="#objectModal5">
                         <img src="img/Aidsphoto.jpg" alt="Object 5">
                         <div class="card-overlay">
-                            <h5 class="card-title">Photograph Diana shaes hands with AIDS patients</h5>
+                            <h5 class="card-title">Photograph of Diana shaking hands with AIDS patients</h5>
                         </div>
                     </div>
                 </div>
@@ -438,293 +438,292 @@
                     <p>We produced an RDF dataset of all our items. Download the python code and rdf file here: <br> <br> <input type="button" class="download-btn" data-file="assets/rdfdataset.zip" value="Download .zipfile RDF"/></p>
                 </div>
             </div>
-                <div class="col-lg-12">
-                    <div class="row justify-content-center">
-                    <div class="w-100 overflow-auto">
-                        <pre id="code1" class="p-3 bg-light rounded"><code>
-                                @prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt; .
-                                @prefix dbr: &lt;<a href="http://dbpedia.org/resource/" target="_blank">http://dbpedia.org/resource/</a>&gt; .
-                                @prefix dc: &lt;<a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>&gt; .
-                                @prefix dcmitype: &lt;<a href="http://purl.org/dc/dcmitype/" target="_blank">http://purl.org/dc/dcmitype/</a>&gt; .
-                                @prefix dcterms: &lt;<a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>&gt; .
-                                @prefix foaf: &lt;<a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>&gt; .
-                                @prefix lod: &lt;<a href="https://github.com/digitalctrlv/LifeOfDiana/" target="_blank">https://github.com/digitalctrlv/LifeOfDiana/</a>&gt; .
-                                @prefix owl: &lt;<a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a>&gt; .
-                                @prefix rdfs: &lt;<a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>&gt; .
-                                @prefix schema: &lt;<a href="https://schema.org/" target="_blank">https://schema.org/</a>&gt; .
-                                @prefix wd: &lt;<a href="https://www.wikidata.org/wiki/" target="_blank">https://www.wikidata.org/wiki/</a>&gt; .
-                                @prefix xsd: &lt;<a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>&gt; .
+        <div class="col-lg-12">
+            <div class="row justify-content-center">
+                    <pre id="code1" class="code-content"><code>
+@prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt; .
+@prefix dbr: &lt;<a href="http://dbpedia.org/resource/" target="_blank">http://dbpedia.org/resource/</a>&gt; .
+@prefix dc: &lt;<a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>&gt; .
+@prefix dcmitype: &lt;<a href="http://purl.org/dc/dcmitype/" target="_blank">http://purl.org/dc/dcmitype/</a>&gt; .
+@prefix dcterms: &lt;<a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>&gt; .
+@prefix foaf: &lt;<a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>&gt; .
+@prefix lod: &lt;<a href="https://github.com/digitalctrlv/LifeOfDiana/" target="_blank">https://github.com/digitalctrlv/LifeOfDiana/</a>&gt; .
+@prefix owl: &lt;<a href="http://www.w3.org/2002/07/owl#" target="_blank">http://www.w3.org/2002/07/owl#</a>&gt; .
+@prefix rdfs: &lt;<a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>&gt; .
+@prefix schema: &lt;<a href="https://schema.org/" target="_blank">https://schema.org/</a>&gt; .
+@prefix wd: &lt;<a href="https://www.wikidata.org/wiki/" target="_blank">https://www.wikidata.org/wiki/</a>&gt; .
+@prefix xsd: &lt;<a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>&gt; .
 
-                                crm:E8 crm:P22 lod:RoyalFamily ;
-                                    crm:P23 dbr:Daniel_Finch ;
-                                    crm:P24 lod:NottinghamHouse .
-                                
-                                lod:DivorceAnnouncement a schema:NewsArticle ;
-                                    dc:language "en"^^xsd:language ;
-                                    dc:subject lod:Divorce ;
-                                    dc:title "It's Official: Charles and Diana Split, and She Pays Her Own Bills" ;
-                                    schema:articleSection "A" ;
-                                    schema:copyrightHolder dbr:The_New_York_Times ;
-                                    schema:creator dbr:Sarah_Lyall ;
-                                    schema:isPartOf "CXLV, 50534" ;
-                                    schema:locationCreated &lt;<a href="http://vocab.getty.edu/page/tgn/7007567" target="_blank">http://vocab.getty.edu/page/tgn/7007567</a>&gt; ;
-                                    schema:pagination 9 ;
-                                    schema:publishDate "1996-08-29"^^xsd:date ;
-                                    schema:publisher dbr:The_New_York_Times .
-                                
-                                lod:EngagementInterview a dcmitype:MovingImage ;
-                                    dc:language "en"^^xsd:language ;
-                                    dc:title "On This Day: Charles and Diana's Awkward Engagement Interview, 1981" ;
-                                    crm:P14 lod:Charles,
-                                        lod:LadyDiana ;
-                                    schema:copyrightHolder "ITN archive" ;
-                                    schema:creator dbr:BBC ;
-                                    schema:dateCreated "1981-02-24"^^xsd:date ;
-                                    schema:genre "Entertainment" ;
-                                    schema:identifier "I0__QzksN8w" ;
-                                    schema:locationCreated lod:BuckinghamPalace ;
-                                    schema:provider dbr:YouTube ;
-                                    schema:publisher &lt;<a href="http://www.youtube.com/@royalchannel" target="_blank">http://www.youtube.com/@royalchannel, The Royal Family Channel"</a>&gt; ;
-                                    schema:uploadDate "2022-02-24"^^xsd:date .
-                                
-                                lod:LadyDianaWithAIDSPatient a schema:Photograph ;
-                                    dc:subject "Princess Diana and Aids Patients " ;
-                                    dc:title "Princess Diana shaking hands with an AIDS patient" ;
-                                    foaf:depicts lod:LadyDiana ;
-                                    schema:copyrightHolder "WireImage" ;
-                                    schema:creator "Anwar Hussein" ;
-                                    schema:dateCreated "1987-08-09"^^xsd:date ;
-                                    schema:identifier 14653447 ;
-                                    schema:locationCreated dbr:Middlesex_Hospital ;
-                                    schema:provider &lt;<a href="http://viaf.org/viaf/151544970" target="_blank">http://viaf.org/viaf/151544970</a>&gt; ;
-                                    schema:uploadDate "2007-08-22"^^xsd:date .
+crm:E8 crm:P22 lod:RoyalFamily ;
+    crm:P23 dbr:Daniel_Finch ;
+    crm:P24 lod:NottinghamHouse .
 
-                                lod:TheCrown a schema:TVSeries ;
-                                    dc:language "en"^^xsd:language ;
-                                    dc:title "The Crown" ;
-                                    owl:sameAs &lt;<a href="https://viaf.org/en/viaf/3838148997596659870003" target="_blank">https://viaf.org/en/viaf/3838148997596659870003</a>&gt; ;
-                                    foaf:depicts lod:AlmaBridge,
-                                        lod:BuckinghamPalace,
-                                        lod:Charles,
-                                        lod:DianaHerTrueStory,
-                                        lod:KensingtonPalace,
-                                        lod:LadyDFuneral,
-                                        lod:LadyDiana,
-                                        lod:LadyDianaOnHolidayInPortofino,
-                                        lod:NottinghamHouse,
-                                        lod:RoyalFamily,
-                                        lod:RoyalWedding,
-                                        lod:Tiara,
-                                        lod:WeddingDress ;
-                                    schema:actor lod:ElizabethDebicki,
-                                        lod:EmmaLouiseCorrin ;
-                                    schema:creator lod:PeterMorgan ;
-                                    schema:genre "Biographical, Drama, Historical" ;
-                                    schema:locationCreated "Ardverikie Estate, Kinloch Laggan, Newtonmore, Highland, Scotland, UK 
-                                    (Balmoral Castle in Scotland)" ;
-                                    schema:producer lod:LeftBankPictures,
-                                        lod:SonyPictureTelevision,
-                                        "Sony Pictures Television Production UK" ;
-                                    schema:provider &lt;<a href="https://viaf.org/en/viaf/110144647635343459670" target="_blank">https://viaf.org/en/viaf/110144647635343459670</a>&gt; ;
-                                    schema:uploadDate "2016-11-05"^^xsd:date .
-                                
-                                dbr:Christopher_Wren foaf:name "Chrisopher Wren" .
+lod:DivorceAnnouncement a schema:NewsArticle ;
+    dc:language "en"^^xsd:language ;
+    dc:subject lod:Divorce ;
+    dc:title "It's Official: Charles and Diana Split, and She Pays Her Own Bills" ;
+    schema:articleSection "A" ;
+    schema:copyrightHolder dbr:The_New_York_Times ;
+    schema:creator dbr:Sarah_Lyall ;
+    schema:isPartOf "CXLV, 50534" ;
+    schema:locationCreated &lt;<a href="http://vocab.getty.edu/page/tgn/7007567" target="_blank">http://vocab.getty.edu/page/tgn/7007567</a>&gt; ;
+    schema:pagination 9 ;
+    schema:publishDate "1996-08-29"^^xsd:date ;
+    schema:publisher dbr:The_New_York_Times .
+
+lod:EngagementInterview a dcmitype:MovingImage ;
+    dc:language "en"^^xsd:language ;
+    dc:title "On This Day: Charles and Diana's Awkward Engagement Interview, 1981" ;
+    crm:P14 lod:Charles,
+        lod:LadyDiana ;
+    schema:copyrightHolder "ITN archive" ;
+    schema:creator dbr:BBC ;
+    schema:dateCreated "1981-02-24"^^xsd:date ;
+    schema:genre "Entertainment" ;
+    schema:identifier "I0__QzksN8w" ;
+    schema:locationCreated lod:BuckinghamPalace ;
+    schema:provider dbr:YouTube ;
+    schema:publisher &lt;<a href="http://www.youtube.com/@royalchannel" target="_blank">http://www.youtube.com/@royalchannel, The Royal Family Channel"</a>&gt; ;
+    schema:uploadDate "2022-02-24"^^xsd:date .
+
+lod:LadyDianaWithAIDSPatient a schema:Photograph ;
+    dc:subject "Princess Diana and Aids Patients " ;
+    dc:title "Princess Diana shaking hands with an AIDS patient" ;
+    foaf:depicts lod:LadyDiana ;
+    schema:copyrightHolder "WireImage" ;
+    schema:creator "Anwar Hussein" ;
+    schema:dateCreated "1987-08-09"^^xsd:date ;
+    schema:identifier 14653447 ;
+    schema:locationCreated dbr:Middlesex_Hospital ;
+    schema:provider &lt;<a href="http://viaf.org/viaf/151544970" target="_blank">http://viaf.org/viaf/151544970</a>&gt; ;
+    schema:uploadDate "2007-08-22"^^xsd:date .
+
+lod:TheCrown a schema:TVSeries ;
+    dc:language "en"^^xsd:language ;
+    dc:title "The Crown" ;
+    owl:sameAs &lt;<a href="https://viaf.org/en/viaf/3838148997596659870003" target="_blank">https://viaf.org/en/viaf/3838148997596659870003</a>&gt; ;
+    foaf:depicts lod:AlmaBridge,
+        lod:BuckinghamPalace,
+        lod:Charles,
+        lod:DianaHerTrueStory,
+        lod:KensingtonPalace,
+        lod:LadyDFuneral,
+        lod:LadyDiana,
+        lod:LadyDianaOnHolidayInPortofino,
+        lod:NottinghamHouse,
+        lod:RoyalFamily,
+        lod:RoyalWedding,
+        lod:Tiara,
+        lod:WeddingDress ;
+    schema:actor lod:ElizabethDebicki,
+        lod:EmmaLouiseCorrin ;
+    schema:creator lod:PeterMorgan ;
+    schema:genre "Biographical, Drama, Historical" ;
+    schema:locationCreated "Ardverikie Estate, Kinloch Laggan, Newtonmore, Highland, Scotland, UK 
+    (Balmoral Castle in Scotland)" ;
+    schema:producer lod:LeftBankPictures,
+        lod:SonyPictureTelevision,
+        "Sony Pictures Television Production UK" ;
+    schema:provider &lt;<a href="https://viaf.org/en/viaf/110144647635343459670" target="_blank">https://viaf.org/en/viaf/110144647635343459670</a>&gt; ;
+    schema:uploadDate "2016-11-05"^^xsd:date .
+
+dbr:Christopher_Wren foaf:name "Chrisopher Wren" .
+
+dbr:Sarah_Lyall foaf:name "Sarah Lyall" .
+
+dcmitype:StillImage rdfs:subClassOf schema:Image .
+
+&lt;<a href="http://vocab.getty.edu/aat/300007838" target="_blank">http://vocab.getty.edu/aat/300007838</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; .
+
+&lt;<a href="http://vocab.getty.edu/aat/300046046" target="_blank">http://vocab.getty.edu/aat/300046046</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; .
+
+&lt;<a href="http://vocab.getty.edu/aat/300255177" target="_blank">http://vocab.getty.edu/aat/300255177</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; .
+
+&lt;<a href="http://vocab.getty.edu/page/aat/300005743" target="_blank">http://vocab.getty.edu/page/aat/300005743</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; .
+
+lod:AndrewMorton owl:sameAs &lt;<a href="http://viaf.org/viaf/22238479" target="_blank">http://viaf.org/viaf/22238479</a>&gt; ;
+    foaf:name "Andrew Morton" .
+
+lod:Archiginnasio owl:sameAs dbr:Archiginnasio_of_Bologna ;
+schema:location &lt;<a href="http://viaf.org/viaf/5185150647115410860003" target="_blank">http://viaf.org/viaf/5185150647115410860003</a>&gt; .
+
+lod:CandleInTheWind a schema:MusicComposition ;
+    dc:language "en"^^xsd:language ;
+    dc:title "Candle in the Wind ’97 (live, 1997-09-06: Westminster Abbey, London, England, UK)" ;
+    owl:sameAs wd:Q2449307 ;
+    schema:about lod:LadyDiana ;
+    schema:contributor lod:BernieTaupin ;
+    schema:creator lod:EltonJohn ;
+    schema:dateCreated "1997-09-06"^^xsd:date ;
+    schema:duration "4:03" ;
+    schema:genre dbr:Ballad,
+        dbr:Classic_rock,
+        dbr:Pop,
+        dbr:Rock_music,
+        "Singer-songwriter" ;
+    schema:identifier "T-011.520.443-7, T-070.028.244-5" ;
+    schema:isBasedOn "Candle in the Wind" ;
+    schema:locationCreated &lt;<a href="http://vocab.getty.edu/page/tgn/1100068" target="_blank">http://vocab.getty.edu/page/tgn/1100068</a>&gt; ;
+    schema:lyricist lod:BernieTaupin ;
+    schema:publisher lod:songPublisher .
+
+lod:DianaHerTrueStory a schema:Book ;
+    dc:language "en"^^xsd:language ;
+    dc:subject lod:Charles,
+        lod:Divorce,
+        lod:LadyDiana,
+        lod:RoyalFamily ;
+    dc:title "Diana: Her True Story - In her Own Words" ;
+    schema:creator lod:AndrewMorton ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:genre "Biography" ;
+    schema:identifier "97818547927091854792709" ;
+    schema:mentions lod:Apartments,
+        lod:KensingtonPalace ;
+    schema:publisher "Michael O'Mara Books" ;
+    schema:sourceOrganization lod:Archiginnasio .
+
+lod:ElizabethDebicki owl:sameAs &lt;<a href="http://viaf.org/viaf/305280245" target="_blank">http://viaf.org/viaf/305280245</a>&gt; ;
+    foaf:name "Elizabeth Debicki" ;
+    schema:roleName lod:LadyDiana .
+                    
+lod:EltonJohn owl:sameAs &lt;<a href="http://viaf.org/viaf/84034533" target="_blank">http://viaf.org/viaf/84034533</a>&gt; ;
+    foaf:name "Elton John" .
+
+lod:EmmaLouiseCorrin owl:sameAs &lt;<a href="http://viaf.org/viaf/1883161881819434100005" target="_blank">http://viaf.org/viaf/1883161881819434100005</a>&gt; ;
+    foaf:name "Emma-Louise Corrin" ;
+    schema:roleName lod:LadyDiana .
+    
+lod:LadyDFuneral a schema:Event ;
+    schema:location &lt;<a href="http://vocab.getty.edu/page/tgn/1100068" target="_blank">http://vocab.getty.edu/page/tgn/1100068</a>&gt; ;
+    schema:workPerformed lod:CandleInTheWind .
+
+lod:LadyDianaOnHolidayInPortofino a schema:Photograph ;
+    dc:subject "Lady Diana, Princess of Wales, sitting on the diving board of Mohammed Al Fayed's private 
+    yacht 'Jonikal' as a seagull flies overhead" ;
+    dc:title "Lady Diana on holiday in Portofino" ;
+    foaf:depicts lod:LadyDiana ;
+    schema:copyrightHolder "Sygma Premium" ;
+    schema:creator "Stephane Cardinale - Corbis" ;
+    schema:dateCreated "1997-08-24"^^xsd:date ;
+    schema:identifier "news-31717-003.jpg" ;
+    schema:locationCreated wd:Q232782 ;
+    schema:provider &lt;<a href="http://viaf.org/viaf/151544970" target="_blank">http://viaf.org/viaf/151544970</a>&gt; ;
+    schema:uploadDate "2016-08-24"^^xsd:date .
+
+lod:LeftBankPictures owl:sameAs &lt;<a href="http://viaf.org/viaf/130591214" target="_blank">http://viaf.org/viaf/130591214</a>&gt; ;
+    foaf:name "Left Bank Pictures" .
+        
+lod:PeterMorgan owl:sameAs wd:Q948122 ;
+    foaf:name "Peter Morgan" .
+
+lod:RoyalWedding a schema:Event ;
+    dc:date "1981-07-29"^^xsd:date ;
+    crm:P14 lod:Charles,
+        lod:LadyDiana ;
+    crm:P16 lod:Tiara,
+        lod:WeddingDress ;
+    schema:location &lt;<a href="http://vocab.getty.edu/tgn/7011781" target="_blank">http://vocab.getty.edu/tgn/7011781</a>&gt; .
                             
-                                dbr:Sarah_Lyall foaf:name "Sarah Lyall" .
-                                
-                                dcmitype:StillImage rdfs:subClassOf schema:Image .
+lod:SonyPictureTelevision owl:sameAs wd:Q652390 ;
+    foaf:name "Sony Pictures Television" .
+    
+lod:songPublisher owl:sameAs wd:Q57818158 ;
+    foaf:name "Universal–Songs of PolyGram International, Inc." .
 
-                                &lt;<a href="http://vocab.getty.edu/aat/300007838" target="_blank">http://vocab.getty.edu/aat/300007838</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; .
-                                
-                                &lt;<a href="http://vocab.getty.edu/aat/300046046" target="_blank">http://vocab.getty.edu/aat/300046046</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; .
-                                
-                                &lt;<a href="http://vocab.getty.edu/aat/300255177" target="_blank">http://vocab.getty.edu/aat/300255177</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; .
-                                
-                                &lt;<a href="http://vocab.getty.edu/page/aat/300005743" target="_blank">http://vocab.getty.edu/page/aat/300005743</a>&gt; rdfs:subClassOf &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; .
+schema:Book rdfs:subClassOf schema:Text .
 
-                                lod:AndrewMorton owl:sameAs &lt;<a href="http://viaf.org/viaf/22238479" target="_blank">http://viaf.org/viaf/22238479</a>&gt; ;
-                                    foaf:name "Andrew Morton" .
-                                
-                                lod:Archiginnasio owl:sameAs dbr:Archiginnasio_of_Bologna ;
-                                schema:location &lt;<a href="http://viaf.org/viaf/5185150647115410860003" target="_blank">http://viaf.org/viaf/5185150647115410860003</a>&gt; .
+schema:MusicComposition rdfs:subClassOf schema:CreativeWork .
 
-                                lod:CandleInTheWind a schema:MusicComposition ;
-                                    dc:language "en"^^xsd:language ;
-                                    dc:title "Candle in the Wind ’97 (live, 1997-09-06: Westminster Abbey, London, England, UK)" ;
-                                    owl:sameAs wd:Q2449307 ;
-                                    schema:about lod:LadyDiana ;
-                                    schema:contributor lod:BernieTaupin ;
-                                    schema:creator lod:EltonJohn ;
-                                    schema:dateCreated "1997-09-06"^^xsd:date ;
-                                    schema:duration "4:03" ;
-                                    schema:genre dbr:Ballad,
-                                        dbr:Classic_rock,
-                                        dbr:Pop,
-                                        dbr:Rock_music,
-                                        "Singer-songwriter" ;
-                                    schema:identifier "T-011.520.443-7, T-070.028.244-5" ;
-                                    schema:isBasedOn "Candle in the Wind" ;
-                                    schema:locationCreated &lt;<a href="http://vocab.getty.edu/page/tgn/1100068" target="_blank">http://vocab.getty.edu/page/tgn/1100068</a>&gt; ;
-                                    schema:lyricist lod:BernieTaupin ;
-                                    schema:publisher lod:songPublisher .
-                                
-                                lod:DianaHerTrueStory a schema:Book ;
-                                    dc:language "en"^^xsd:language ;
-                                    dc:subject lod:Charles,
-                                        lod:Divorce,
-                                        lod:LadyDiana,
-                                        lod:RoyalFamily ;
-                                    dc:title "Diana: Her True Story - In her Own Words" ;
-                                    schema:creator lod:AndrewMorton ;
-                                    schema:datePublished "1997"^^xsd:gYear ;
-                                    schema:genre "Biography" ;
-                                    schema:identifier "97818547927091854792709" ;
-                                    schema:mentions lod:Apartments,
-                                        lod:KensingtonPalace ;
-                                    schema:publisher "Michael O'Mara Books" ;
-                                    schema:sourceOrganization lod:Archiginnasio .
-                                
-                                lod:ElizabethDebicki owl:sameAs &lt;<a href="http://viaf.org/viaf/305280245" target="_blank">http://viaf.org/viaf/305280245</a>&gt; ;
-                                    foaf:name "Elizabeth Debicki" ;
-                                    schema:roleName lod:LadyDiana .
-                                                    
-                                lod:EltonJohn owl:sameAs &lt;<a href="http://viaf.org/viaf/84034533" target="_blank">http://viaf.org/viaf/84034533</a>&gt; ;
-                                    foaf:name "Elton John" .
-                                
-                                lod:EmmaLouiseCorrin owl:sameAs &lt;<a href="http://viaf.org/viaf/1883161881819434100005" target="_blank">http://viaf.org/viaf/1883161881819434100005</a>&gt; ;
-                                    foaf:name "Emma-Louise Corrin" ;
-                                    schema:roleName lod:LadyDiana .
-                                    
-                                lod:LadyDFuneral a schema:Event ;
-                                    schema:location &lt;<a href="http://vocab.getty.edu/page/tgn/1100068" target="_blank">http://vocab.getty.edu/page/tgn/1100068</a>&gt; ;
-                                    schema:workPerformed lod:CandleInTheWind .
-                                
-                                lod:LadyDianaOnHolidayInPortofino a schema:Photograph ;
-                                    dc:subject "Lady Diana, Princess of Wales, sitting on the diving board of Mohammed Al Fayed's private yacht 
-                                    'Jonikal' as a seagull flies overhead" ;
-                                    dc:title "Lady Diana on holiday in Portofino" ;
-                                    foaf:depicts lod:LadyDiana ;
-                                    schema:copyrightHolder "Sygma Premium" ;
-                                    schema:creator "Stephane Cardinale - Corbis" ;
-                                    schema:dateCreated "1997-08-24"^^xsd:date ;
-                                    schema:identifier "news-31717-003.jpg" ;
-                                    schema:locationCreated wd:Q232782 ;
-                                    schema:provider &lt;<a href="http://viaf.org/viaf/151544970" target="_blank">http://viaf.org/viaf/151544970</a>&gt; ;
-                                    schema:uploadDate "2016-08-24"^^xsd:date .
-        
-                                lod:LeftBankPictures owl:sameAs &lt;<a href="http://viaf.org/viaf/130591214" target="_blank">http://viaf.org/viaf/130591214</a>&gt; ;
-                                    foaf:name "Left Bank Pictures" .
-                                        
-                                lod:PeterMorgan owl:sameAs wd:Q948122 ;
-                                    foaf:name "Peter Morgan" .
-        
-                                lod:RoyalWedding a schema:Event ;
-                                    dc:date "1981-07-29"^^xsd:date ;
-                                    crm:P14 lod:Charles,
-                                        lod:LadyDiana ;
-                                    crm:P16 lod:Tiara,
-                                        lod:WeddingDress ;
-                                    schema:location &lt;<a href="http://vocab.getty.edu/tgn/7011781" target="_blank">http://vocab.getty.edu/tgn/7011781</a>&gt; .
-                                                            
-                                lod:SonyPictureTelevision owl:sameAs wd:Q652390 ;
-                                    foaf:name "Sony Pictures Television" .
-                                    
-                                lod:songPublisher owl:sameAs wd:Q57818158 ;
-                                    foaf:name "Universal–Songs of PolyGram International, Inc." .
+schema:NewsArticle rdfs:subClassOf schema:Text .
+
+schema:TVSeries rdfs:subClassOf dcmitype:MovingImage .
+
+dbr:The_New_York_Times foaf:name "The New York Times" ;
+    schema:location &lt;<a href="http://vocab.getty.edu/page/tgn/7007567" target="_blank">http://vocab.getty.edu/page/tgn/7007567</a>&gt; .
+
+dcmitype:MovingImage rdfs:subClassOf schema:Image .
+
+&lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; rdfs:subClassOf schema:CreativeWork .
+
+&lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; rdfs:subClassOf schema:CreativeWork .
+
+lod:AlmaBridge a &lt;<a href="http://vocab.getty.edu/aat/300007838" target="_blank">http://vocab.getty.edu/aat/300007838</a>&gt; ;
+    dc:title "Alma Bridge" ;
+    schema:copyrightHolder "Minister of Equipment, Transport, Housing, Tourism, and the Sea" ;
+    schema:creator "Auguste Arsac, M. Dougnac","J. F. Coste, Ch. Blanc" ;
+    schema:endDate "1974"^^xsd:gYear ;
+    schema:geoCrosses &lt;<a href="http://viaf.org/viaf/316432461" target="_blank">http://viaf.org/viaf/316432461</a>&gt; ;
+    schema:location wd:Q90 ;
+    schema:material "Steel bridge" ;
+    schema:startDate "1970"^^xsd:gYear .
+
+lod:Apartments schema:isPartOf lod:KensingtonPalace .
+
+lod:BernieTaupin owl:sameAs dbr:Bernie_Taupin ;
+    foaf:name "Bernie Taupin" .
+
+lod:BuckinghamPalace owl:sameAs &lt;<a href="https://viaf.org/en/viaf/135411769" target="_blank">https://viaf.org/en/viaf/135411769</a>&gt; .
+
+lod:Divorce a schema:Event ;
+    crm:P14 lod:Charles,
+        lod:LadyDiana .
+
+lod:SpencerFamily owl:sameAs dbr:Spencer_family .
+
+schema:Image rdfs:subClassOf schema:CreativeWork .
+
+schema:Photograph rdfs:subClassOf dcmitype:StillImage .
+
+schema:Text rdfs:subClassOf schema:CreativeWork .
+
+lod:NottinghamHouse schema:creationDate "1605"^^xsd:gYear ;
+    schema:creator "Sir George Coppin" .
+
+    lod:Tiara a &lt;<a href="http://vocab.getty.edu/aat/300046046" target="_blank">http://vocab.getty.edu/aat/300046046</a>&gt; ;
+    dc:relation lod:WeddingDress ;
+    dc:title "Spencer Tiara" ;
+    schema:copyrightHolder lod:SpencerFamily ;
+    schema:creator "Garrard &amp; Co" ;
+    schema:dateCreated "1937"^^xsd:gYear ;
+    schema:location "Spencer Family Collection" ;
+    schema:material "Silver, gold, diamonds" .
                         
-                                schema:Book rdfs:subClassOf schema:Text .
+lod:WeddingDress a &lt;<a href="http://vocab.getty.edu/aat/300255177" target="_blank">http://vocab.getty.edu/aat/300255177</a>&gt; ;
+    dc:relation lod:Tiara ;
+    dc:title "Lady Diana Spencer's Wedding Dress" ;
+    schema:color "Ivory" ;
+    schema:copyrightHolder lod:SpencerFamily,
+        "David Emanuel, Elizabeth Emanuel" ;
+    schema:creator "David Emanuel, Elizabeth Emanuel" ;
+    schema:location "Spencer Family Collection" ;
+    schema:material "Ivory silk taffeta, antique lace, pearls, sequins" .
 
-                                schema:MusicComposition rdfs:subClassOf schema:CreativeWork .
-                                
-                                schema:NewsArticle rdfs:subClassOf schema:Text .
-                                
-                                schema:TVSeries rdfs:subClassOf dcmitype:MovingImage .
-                                
-                                dbr:The_New_York_Times foaf:name "The New York Times" ;
-                                    schema:location &lt;<a href="http://vocab.getty.edu/page/tgn/7007567" target="_blank">http://vocab.getty.edu/page/tgn/7007567</a>&gt; .
-                                
-                                dcmitype:MovingImage rdfs:subClassOf schema:Image .
-                                
-                                &lt;<a href="http://vocab.getty.edu/page/aat/300209261" target="_blank">http://vocab.getty.edu/page/aat/300209261</a>&gt; rdfs:subClassOf schema:CreativeWork .
-                                
-                                &lt;<a href="http://vocab.getty.edu/page/aat/300264550" target="_blank">http://vocab.getty.edu/page/aat/300264550</a>&gt; rdfs:subClassOf schema:CreativeWork .
+lod:RoyalFamily owl:sameAs dbr:British_royal_family ;
+    schema:owns lod:KensingtonPalace .
+                        
+lod:Charles owl:sameAs &lt;<a href="http://viaf.org/viaf/84034215" target="_blank">http://viaf.org/viaf/84034215</a>&gt; ;
+    schema:memberOf lod:RoyalFamily ;
+    schema:owns lod:KensingtonPalace .
+                        
+lod:KensingtonPalace owl:sameAs &lt;<a href="http://vocab.getty.edu/page/aat/300005743" target="_blank">http://vocab.getty.edu/page/aat/300005743</a>&gt; ;
+    dc:title "Kensington Palace" ;
+    dcterms:replaces lod:NottinghamHouse ;
+    owl:sameAs &lt;<a href="https://viaf.org/en/viaf/172644537" target="_blank">https://viaf.org/en/viaf/172644537</a>&gt; ;
+    schema:address "KENSINGTON PALACE, KENSINGTON PALACE W8" ;
+    schema:creator dbr:Christopher_Wren ;
+    schema:genre &lt;<a href="http://vocab.getty.edu/page/aat/300107014" target="_blank">http://vocab.getty.edu/page/aat/300107014</a>&gt; ;
+    schema:identifier 1223861 ;
+    schema:material "Stone" ;
+    schema:publishDate "1969-04-15" ;
+    schema:sourceOrganization dbr:Historic_England .
 
-                                lod:AlmaBridge a &lt;<a href="http://vocab.getty.edu/aat/300007838" target="_blank">http://vocab.getty.edu/aat/300007838</a>&gt; ;
-                                    dc:title "Alma Bridge" ;
-                                    schema:copyrightHolder "Minister of Equipment, Transport, Housing, Tourism, and the Sea" ;
-                                    schema:creator "Auguste Arsac, M. Dougnac","J. F. Coste, Ch. Blanc" ;
-                                    schema:endDate "1974"^^xsd:gYear ;
-                                    schema:geoCrosses &lt;<a href="http://viaf.org/viaf/316432461" target="_blank">http://viaf.org/viaf/316432461</a>&gt; ;
-                                    schema:location wd:Q90 ;
-                                    schema:material "Steel bridge" ;
-                                    schema:startDate "1970"^^xsd:gYear .
-                                
-                                lod:Apartments schema:isPartOf lod:KensingtonPalace .
+lod:LadyDiana owl:sameAs &lt;<a href="http://viaf.org/viaf/107032638" target="_blank">http://viaf.org/viaf/107032638</a>&gt; ;
+    schema:deathPlace lod:AlmaBridge ;
+    schema:homeLocation lod:Apartments .
 
-                                lod:BernieTaupin owl:sameAs dbr:Bernie_Taupin ;
-                                    foaf:name "Bernie Taupin" .
-
-                                lod:BuckinghamPalace owl:sameAs &lt;<a href="https://viaf.org/en/viaf/135411769" target="_blank">https://viaf.org/en/viaf/135411769</a>&gt; .
-
-                                lod:Divorce a schema:Event ;
-                                    crm:P14 lod:Charles,
-                                        lod:LadyDiana .
-                                
-                                lod:SpencerFamily owl:sameAs dbr:Spencer_family .
-
-                                schema:Image rdfs:subClassOf schema:CreativeWork .
-
-                                schema:Photograph rdfs:subClassOf dcmitype:StillImage .
-
-                                schema:Text rdfs:subClassOf schema:CreativeWork .
-
-                                lod:NottinghamHouse schema:creationDate "1605"^^xsd:gYear ;
-                                    schema:creator "Sir George Coppin" .
-                                
-                                    lod:Tiara a &lt;<a href="http://vocab.getty.edu/aat/300046046" target="_blank">http://vocab.getty.edu/aat/300046046</a>&gt; ;
-                                    dc:relation lod:WeddingDress ;
-                                    dc:title "Spencer Tiara" ;
-                                    schema:copyrightHolder lod:SpencerFamily ;
-                                    schema:creator "Garrard &amp; Co" ;
-                                    schema:dateCreated "1937"^^xsd:gYear ;
-                                    schema:location "Spencer Family Collection" ;
-                                    schema:material "Silver, gold, diamonds" .
-                                                        
-                                lod:WeddingDress a &lt;<a href="http://vocab.getty.edu/aat/300255177" target="_blank">http://vocab.getty.edu/aat/300255177</a>&gt; ;
-                                    dc:relation lod:Tiara ;
-                                    dc:title "Lady Diana Spencer's Wedding Dress" ;
-                                    schema:color "Ivory" ;
-                                    schema:copyrightHolder lod:SpencerFamily,
-                                        "David Emanuel, Elizabeth Emanuel" ;
-                                    schema:creator "David Emanuel, Elizabeth Emanuel" ;
-                                    schema:location "Spencer Family Collection" ;
-                                    schema:material "Ivory silk taffeta, antique lace, pearls, sequins" .
-                                
-                                lod:RoyalFamily owl:sameAs dbr:British_royal_family ;
-                                    schema:owns lod:KensingtonPalace .
-                                                        
-                                lod:Charles owl:sameAs &lt;<a href="http://viaf.org/viaf/84034215" target="_blank">http://viaf.org/viaf/84034215</a>&gt; ;
-                                    schema:memberOf lod:RoyalFamily ;
-                                    schema:owns lod:KensingtonPalace .
-                                                        
-                                lod:KensingtonPalace owl:sameAs &lt;<a href="http://vocab.getty.edu/page/aat/300005743" target="_blank">http://vocab.getty.edu/page/aat/300005743</a>&gt; ;
-                                    dc:title "Kensington Palace" ;
-                                    dcterms:replaces lod:NottinghamHouse ;
-                                    owl:sameAs &lt;<a href="https://viaf.org/en/viaf/172644537" target="_blank">https://viaf.org/en/viaf/172644537</a>&gt; ;
-                                    schema:address "KENSINGTON PALACE, KENSINGTON PALACE W8" ;
-                                    schema:creator dbr:Christopher_Wren ;
-                                    schema:genre &lt;<a href="http://vocab.getty.edu/page/aat/300107014" target="_blank">http://vocab.getty.edu/page/aat/300107014</a>&gt; ;
-                                    schema:identifier 1223861 ;
-                                    schema:material "Stone" ;
-                                    schema:publishDate "1969-04-15" ;
-                                    schema:sourceOrganization dbr:Historic_England .
-                                
-                                lod:LadyDiana owl:sameAs &lt;<a href="http://viaf.org/viaf/107032638" target="_blank">http://viaf.org/viaf/107032638</a>&gt; ;
-                                    schema:deathPlace lod:AlmaBridge ;
-                                    schema:homeLocation lod:Apartments .
-
-                            </code></pre>
-                    </div>
+                    </code></pre>
+            </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="row justify-content-center">
@@ -743,8 +742,6 @@
                             <li>https://github.com/digitalctrlv/LifeOfDiana/CandleInTheWind</li>
                             <li>https://github.com/digitalctrlv/LifeOfDiana/TheCrown</li>
                         </ul>
-                        <p>This is text of another group -- In addition, so as to uniquely identify our entities, we tried to align them to external resources such as authority files and repositories of knowledge already present on the World Wide Web. In particular, we connected our data to <b>VIAF, Geonames, Getty AAT, Library of Congress Linked Data Service</b> and <b>Wikidata.</b></p>
-                        <p>To create such external connections we exploited some properties able to create semantic associations, namely: <b>owl:sameAs, skos:exactMatch, skos:broader, skos:related, foaf:isPrimaryTopicOf,</b> and <b>rdfs:seeAlso.</b></p>
                         <br>
                         <h3 id="rdf-visualization" class="h3">RDF Visualization</h3>
                         <img src="img/rdfgraph.svg" 
@@ -807,7 +804,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Engagement Interview</h5>
+                    <h5 class="modal-title">The engagement interview</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" color="white"></button>
                 </div>
                 <div class="modal-body">
@@ -815,7 +812,7 @@
                         <div id="player"></div>
                     </div>
                     <h4 class="modal-subtitle">Mediatype: Video</h4>
-                    <p>In a BBC interview at Buckingham Palace on February 24 1981, it was the official announcement of the engagement of Prince Charles and Lady Diana Spencer...</p>
+                    <p>The engagement of Prince Charles and Lady Diana Spencer was announced in a BBC interview at Buckingham Palace on February 24 1981. It is remembered as the "Awkward Engagement Interview” due to a particular comment of the Prince: <i>"Whatever in love means."</i></p>
                     <a id="ytvid" href="https://www.youtube.com/watch?v=I0__QzksN8w" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source
                     </a>
@@ -831,13 +828,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Spencer Tiara</h5>
+                    <h5 class="modal-title">The Spencer Tiara</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/tiara.jpg" alt="Spencer Tiara">
                     <h4 class="modal-subtitle">Mediatype: Tiara</h4>
-                    <p>Is a unique piece of jewelry of diamonds in silver settings mounted in gold in various floral shapes assembly by Garrard & Co as a tiara in 1937, own by the Spencer family. Used by Lady Diana during her wedding to Prince Charles, it was characteristic  because she decided to wear a tiara from her family and not a jewel of the crown.</p>
+                    <p>The tiara is a unique piece of jewelry, featuring diamonds set in silver mountings that are subsequently mounted in gold and cast into various floral motifs. This piece was assembled by Garrard & Co as a tiara in 1937 and is currently owned by the Spencer family. Notable for its use by Lady Diana during her wedding to Prince Charles, the tiara was particularly significant as it represented her decision to wear a piece from her own family's collection rather than selecting a jewel from the Crown collection.</p>
                     <a href="https://en.wikipedia.org/wiki/Jewels_of_Diana,_Princess_of_Wales" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source 
                     </a> <hr>
@@ -852,13 +849,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Lady Diana Spencer's Wedding Dress</h5>
+                    <h5 class="modal-title">The wedding dress</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/weddingDress.jpg" alt="Lady Diana Spencer's Wedding Dress">
                     <h4 class="modal-subtitle">Mediatype: Wedding dress</h4>
-                    <p>Is the dress worn by Lady Diana for her wedding to Prince Charles in 1981 at St’Paul Cathedral in London. Was an ivory silk taffeta and antique lace gown, with a 25-foot train and a 140 m tulle veil. Is considered today one of the most iconic wedding dresses in history, becoming inspiration for the 1980’s fashion.</p>
+                    <p>The dress worn by Lady Diana for her wedding to Prince Charles in 1981 at St. Paul's Cathedral in London was an ivory silk taffeta and antique lace gown, featuring a 25-foot train and a 140-meter tulle veil. It is considered today one of the most iconic wedding dresses in history, having served as inspiration for 1980s fashion trends.</p>
                     <a href="https://www.hrp.org.uk/kensington-palace/royal-lace-the-wedding-dress-of-diana-princess-of-wales/#gs.myw556" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i>Visit the original source
                     </a> <hr>
@@ -879,7 +876,7 @@
                 <div class="modal-body">
                     <img src="img/kensington.jpg" alt="Kensington Palace">
                     <h4 class="modal-subtitle">Mediatype: Building</h4>
-                    <p>Kensington Palace is an XVIII century palace of the royal family that work as residence for several royal family members. It became the official residence of Princess Diana since the day after the wedding until her death.</p>
+                    <p>Kensington Palace has served as a residence for several members of the British royal family since the 17th century. Its original structure, formerly known as Nottingham House and owned by Daniel Finch, 2nd Earl of Nottingham and 7th Earl of Winchilsea, was built in 1605. It was purchased in 1689 by King William III (1650–1702) and Queen Mary II (1662–1694), who commissioned architect Christopher Wren (1632–1723) to rebuild it into what we now know as Kensington Palace. Apartments 8 and 9 became the official residence of Princess Diana from the day after her wedding until her death.</p>
                     <a href="https://historicengland.org.uk/listing/the-list/list-entry/1002038" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i>Visit the original source 
                     </a> <hr>
@@ -894,13 +891,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Photograph Diana shakes hands with AIDS patients</h5>
+                    <h5 class="modal-title">Photograph of Diana shaking hands with an AIDS patient</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/Aidsphoto.jpg" alt="Photograph Diana shaes hands with AIDS patients">
                     <h4 class="modal-subtitle">Mediatype: Photograph</h4>
-                    <p>The photo taken on April 1987 portrays Princess Diana shaking hands with AIDS patient without wearing gloves, breaking the misconception that HI/AIDs was contagious from simple touch, creating awareness and reducing the stigma related to the disease.</p>
+                    <p>The photo taken on April 1987 portrays Princess Diana shaking hands with AIDS patient without wearing gloves, breaking the misconception that HIV/AIDS was contagious from simple touch, creating awareness and reducing the stigma related to the disease.</p>
                     <a href="https://www.gettyimages.it/detail/fotografie-di-cronaca/diana-princess-of-wales-shakes-hands-with-a-aids-fotografie-di-cronaca/76214611?adppopup=true" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source 
                     </a> <hr>
@@ -921,7 +918,7 @@
                 <div class="modal-body">
                     <img src="img/book.jpg" alt="Biography of Diana">
                     <h4 class="modal-subtitle">Mediatype: Book</h4>
-                    <p>“Diana in her own words- her true story” is a biography of Princess Diana, written by Andrew Morton. Was a controversial book at the time because it provide intimate details of her unhappiness of her marriage and her relationships with royal family members</p>
+                    <p>“Diana in her own words- her true story” is a biography of Princess Diana, written by Andrew Morton and testified by Diana herself. The book was considered controversial at the time because it provided intimate details of her unhappiness during her marriage and her relationships with royal family members.</p>
                     <a href="https://sol.unibo.it/SebinaOpac/resource/diana-her-true-story-in-her-own-words/UBO05615834" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source 
                     </a> <hr>
@@ -936,13 +933,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Divorce announcement</h5>
+                    <h5 class="modal-title">The divorce announcement</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/divorceAnnouncement.jpeg" alt="Divorce announcement">
                     <h4 class="modal-subtitle">Mediatype: News Article</h4>
-                    <p>"It's Official: Charles and Diana Split, and She Pays Her Own Bills" article published by New York Times in 1996. It stated the conclusion of the divorce process, with the specific settlement clauses between the Prince and Princess of Wales.</p>
+                    <p>The article "It's Official: Charles and Diana Split, and She Pays Her Own Bills," published by The New York Times in 1996, reported the conclusion of the divorce process, including the specific settlement clauses between the Prince and Princess of Wales. The media closely followed Charles and Diana's relationship, often interfering with their personal lives and causing many disputes, as portrayed in the modern television series <i>The Crown</i>.</p>
                     <a href="https://www.nytimes.com/1996/08/29/world/it-s-official-charles-and-diana-split-and-she-pays-her-own-bills.html" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source 
                     </a> <hr>
@@ -957,13 +954,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Photograph of Lady Diana on holiday in Portofino</h5>
+                    <h5 class="modal-title">Photograph of Diana on holiday in Portofino</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/photoPortofino.jpg" alt="Photo in portofino ">
                     <h4 class="modal-subtitle">Mediatype: Photograph</h4>
-                    <p>The photo was taken on August 1997 portrays Princess Diana on a yacht in Portofino, Italy. It's said that portraits her sense of solitude in her last days of her life.</p>
+                    <p>The photo was taken on August 1997 portrays Princess Diana on a yacht in Portofino, Italy. It's said that it portraits her sense of solitude in her last days of her life.</p>
                     <a href="https://www.gettyimages.it/detail/fotografie-di-cronaca/lady-diana-princess-of-wales-sitting-on-the-fotografie-di-cronaca/542261058" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i> Visit the original source 
                     </a> <hr>
@@ -978,13 +975,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Alma Bridge</h5>
+                    <h5 class="modal-title">The Alma Bridge</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img//ponteAlma.jpg" alt="alma bridge">
                     <h4 class="modal-subtitle">Mediatype: Building</h4>
-                    <p>Pont de l’Alma is a road bridge that goes across the Seine in Paris, France. Was build in 1856 and takes its name from the victory of France during the battle of Alma in the Crimean War. Now a days is known for being the site of the car crash where Princess Diana died in 1997.</p>
+                    <p>Pont de l’Alma is a road bridge that crosses the Seine in Paris, France. It was built in 1856 and takes its name from the victory of France during the battle of Alma in the Crimean War. Nowadays it is known for being the site of the car crash where Princess Diana died in 1997.</p>
                     <a href="https://structurae.net/en/structures/alma-bridge-1974" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i>Visit the original source  
                     </a> <hr>
@@ -999,13 +996,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Candle in the Wind </h5>
+                    <h5 class="modal-title">Candle in the Wind</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="img/candleInTheWind.jpg" alt="Candle in the wind song">
                     <h4 class="modal-subtitle">Mediatype: Musical Composition</h4>
-                    <p>The song is a re-recorded version of the 1973 version of the song. It was performed by Elton John during the funeral service  of Princess Diana at Westminster Abbey on September 6, 1997. Elton John dedicated the song to her calling her “Goodbye England’s Rose”, later the song was released as a single dedicated to Princess Diana.</p>
+                    <p>The song is a re-recorded version of the original recorded in 1973. It was performed by Elton John during the funeral service  of Princess Diana at Westminster Abbey on September 6, 1997. Elton John dedicated the song to her calling her “Goodbye England’s Rose.” Later the song was released as a single dedicated to Princess Diana.</p>
                     <a href="https://musicbrainz.org/work/60be69e5-1338-4376-88e1-832ab03b3794" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i>Visit the original source  
                     </a> <hr>
@@ -1026,7 +1023,7 @@
                 <div class="modal-body">
                     <img src="img/theCrown.jpg" alt="the Crown">
                     <h4 class="modal-subtitle">Mediatype: TV Series</h4>
-                    <p>Historical drama television series made by Netflix, that portrait the life of the British Royal family during the 20th century. During Season four, five and six they portrait Princess Diana since her engagement to Prince Charles until her death.</p>
+                    <p><i>The Crown</i> is a historical drama television series produced by Netflix that portrays the life of the British royal family during the 20th century. In seasons four, five, and six, it portrays Princess Diana from her engagement to Prince Charles until her death..</p>
                     <a href="https://www.imdb.com/es/title/tt4786824/" target="_blank" class="external-link">
                         <i class="fas fa-external-link-alt me-1"></i>Visit the original source
                     </a> <hr>
