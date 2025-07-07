@@ -5,7 +5,7 @@ Group project for the Information Science and Cultural Heritage (I.C.)
 
 Contributors
 
-Alice Spadavecchia
-María Juliana Gamboa Nivia
-Anouk Flinkert 
+- Alice Spadavecchia
+- María Juliana Gamboa Nivia
+- Anouk Flinkert 
 
