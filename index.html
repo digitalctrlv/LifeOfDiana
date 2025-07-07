@@ -11,6 +11,7 @@
     <!-- custom stylesheet-->
     <link rel="stylesheet" href="styles.css">
     <title>Life of Diana</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
 </head>
 <body>
@@ -98,7 +99,7 @@
         </div>
     </section>
 
-    <!-- Timeline -->
+    <!-- TIMELINE -->
     <section id="time-line">
         <div class="container lg-4 my-5">
             <div class="row justify-content-center">
@@ -108,11 +109,11 @@
                 </div>
                 <div class="col-lg-6">
                     <p>The interactive timeline weaves together Diana's remarkable life story with the featured objects, presenting them in chronological order. While this timeline extends beyond the core assignment requirements, we believe it significantly enhances user engagement and deepens understanding of Diana's legacy.</p>
-                    <p>To provide essential context, we incorporated key life events—her birth, wedding, and funeral—alongside the featured objects. This approach helps visitors navigate through different periods of her life while maintaining chronological clarity.</p>
+                    <p>To provide essential context, we incorporated key life events—her birth, wedding, and funeral—alongside the featured objects. This approach helps readers navigate through different periods of her life while maintaining chronological clarity.</p>
                     <p>The timeline is powered by Timeline.JS, a free visualization tool developed by Northwestern University's Knight Lab. For detailed information about the timeline's creation and functionality, please visit the <a class="external-link" href="https://timeline.knightlab.com/">Timeline.JS website</a>.</p>
                 </div>
         </div>
-        <div class="containre lg-4 my-5">
+        <div class="container lg-4 my-5">
                 <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vT5f7b0l2RlCkAAdVJhFk5Ab0EfV0TyYmvlixD5zaAFLi7eNsxF2HYZUz1U5TTt7Up5uT1432VRuVCC&font=Default&lang=en&initial_zoom=2&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
         </div>
     </section>
@@ -130,7 +131,7 @@
                 <div class="col-lg-6">
                     <p>The 10 distinctive objects selected for this narrative represent a broad spectrum of media types, incorporating textual materials, architectural structures, musical works, and additional cultural artifacts that collectively illuminate different aspects of Diana's life.</p>
                     <p>The selection of items was done considering their relevance on her life and legacy in relation to other individuals, places and time.</p>
-                    <p>These items serve as the foundation for our knowledge models and data creation. By clicking on any image below, you can access an enlarged view of the resource and follow external links to both the original source website and a downloadable CSV file containing the complete raw metadata for each item.</p>
+                    <p>These items serve as the foundation for our knowledge models and data creation. By clicking on any image below, you can access an enlarged view of the resource and follow external links to both the source where the metadata was drawn from. The download button gives access to the CSV file containing the complete raw metadata for each item.</p>
                     <p>All images and visual materials used in this project are either copyright-free, sourced from public domain collections, or used under Creative Commons licensing agreements, ensuring full compliance with intellectual property rights.</p>
                 </div>
         </div>
@@ -226,19 +227,28 @@
                 </div>
         </div>
     </section>
-
+    
 
     
     <!-- Knowledge organisation --> 
     <section id="know-org">
         <div class="container lg-4 my-5">
             <div class="row justify-content-center">
-                <h4 class="section-title2">Knowledge Organization</h4>
+                <div class="col-lg-6">
+                    <h4 class="section-title2">Knowledge Organization</h4>
+                    <p class="section-lower-title">Elaborating on the construction of information using models.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>In this section, we document our attempts to make sense of the existing constructs of the information in which our diverse objects exist. During this process, we acknowledged how different the natures of our items were, which may result in diverging ontologies and varying use of metadata by the source organization.</p>
+                    <p>In particular, it was challenging to understand the metadata standards used to describe the wedding dress and tiara due to their provenance. The items are in private possession by the Spencer family and are not digitally represented by, for example, a non-profit organization such as a museum. However, fortunately, the exhibits of both items have been documented by the hosting institutions, including Kensington Palace, which allowed us to trace some of their metadata.</p>
+                    <p>The theoretical model helped us to identify the most prominent information that can describe the objects using natural language. This intermediate step bridges the challenging process of abstracting real-world objects into their conceptual understanding.</p>
+                    <p>Ultimately, the conceptual model's graph visualizes the ontology resulting from our abstraction, as we tried to connect it to as many existing standards and vocabularies as possible. We found that we only lacked a term for "royal" or "royal family" and decided to define this ourselves.</p>
+                </div>
+            <div class="row justify-content-center">    
                 <div class="col-lg-8">
                     <div id="metadata-analysis">
                         <h3 class="h3">Metadata Analysis</h3>
-                            <p>We identified the metadata of our chosen items from the institutions holding them and the different metadata standards in which the institution decided to encode the objects. The table bellow explains the item, its type, the provider institution and the metadata standard. In the metadata standards column those marked with * represent those where the provider did not explicitly provide the used standard, therefore applied the prevalent standard of the item.</p>
-                            <br>
+                            <p>During the metadata analysis, we identified and documented the metadata according to the standards chosen by the institution to encode the items. The table below shows the item, its object type, the provider institution, and the metadata standard. The standards marked with an * indicate those in which the provider did not explicitly specify the used standard; in such cases, a close estimate of the metadata standard has been provided.</p>
                             <div style="overflow-x:auto;">   
                                 <table style="width: 100%">
                                     <tr>
@@ -315,10 +325,10 @@
                                     </tr>
                                 </table>
                             </div>
-                        </div>
+                    </div>
                     <div id="theoretical-model">
                         <h3 class="h3">Theoretical model</h3>
-                            <p>After identify the data description of our chosen items from the institutions holding them. We described or items in natural language in a graphic model reusing the description from the institution holding the items adding relevant information and interlinking the relationships of the items itself to create the narrative our our study domain with the purpose of enriching the data with the layer of interpretation. To ensure the unique identification of our entities, we aligned them with authoritative files and well-established knowledge repositories on the Web. We used to link our data <b>VIAF</b>, <b>GeoNames</b>, the <b>Getty vocabularies</b> and <b>Wikidata</b>.</p>
+                            <p>After identifying the data descriptions, we depicted the items in natural language within a graphic model, reusing the descriptions provided by the institution holding the items. We added relevant information and interlinked the relationships between the items to create a narrative for our study domain, aiming to enrich the data with an interpretative layer. To ensure the unique identification of our entities, we aligned them with authoritative records and well-established knowledge repositories on the web. We used these standards to connect to our data: <b>VIAF</b>, <b>GeoNames</b>, the <b>Getty vocabularies</b> and <b>Wikidata</b>.</p>
                             <p></p>We created this theoretical model answering the questions: Who, Where When, What for each item.</p>
                             <br>
                         <img src="img/theoreticalModel.png" 
@@ -331,10 +341,9 @@
                     </div>
                     <div id="conceptual-model">
                         <h3 class="h3">Conceptual model</h3>
-                            <p>We developed our Conceptual Model, the formal representation of the Theoretical model. The subjects, concepts and relationships identified in the Theoretical Model, were refactored in the Conceptual Model using classes and properties taken from selected schemas, vocabularies, and ontologies.</p>
-                            <p>Initially we relied primarily on <b>schema.org</b> for describing entities and object properties because it provided the most comprehensive coverage for describing events and the more abstract concepts. For domain-specific entities we incorporated terms from <b>Dublin Core</b> and <b>Getty vocabularies</b>.</p>
-                            <p>We used <b>CIDOC CRM</b>, which allowed for a semantically rich and structured representation of cultural heritage processes. 
-                            For object and datatype properties, we adopted terms from <b>FOAF</b>, Dublin Core, CIDOC CRM, and schema.org, depending on the level of semantic context required.</p>
+                            <p>We developed our Conceptual Model as a formal representation of the Theoretical Model. The subjects, concepts, and relationships identified within the Theoretical Model were refactored in the Conceptual Model using classes and properties sourced from selected schemas, vocabularies, and ontologies.</p> 
+                            <p>Initially, we primarily relied on <b>schema.org</b> for describing entities and object properties, given its comprehensive coverage of events and more abstract concepts. For domain-specific entities, we incorporated terms from <b>Dublin Core</b> and <b>Getty vocabularies</b>.</p> 
+                            <p>We also employed <b>CIDOC CRM</b>, which facilitated a semantically rich and structured representation of cultural heritage processes. For object and datatype properties, we adopted terms from <b>FOAF</b>, Dublin Core, CIDOC CRM, and schema.org, depending on the level of semantic context required.</p>
                             <br>
                         <img src="img/conceptualModel.svg" 
                             alt="Conceptual Model Diagram" 
@@ -438,7 +447,7 @@
                     <p>We produced an RDF dataset of all our items. Download the python code and rdf file here: <br> <br> <input type="button" class="download-btn" data-file="assets/rdfdataset.zip" value="Download .zipfile RDF"/></p>
                 </div>
             </div>
-        <div class="col-lg-12">
+        <div class="col-lg-10 col-md-8 col-sm-12">
             <div class="row justify-content-center">
                     <pre id="code1" class="code-content"><code>
 @prefix crm: &lt;<a href="http://www.cidoc-crm.org/cidoc-crm/" target="_blank">http://www.cidoc-crm.org/cidoc-crm/</a>&gt; .
